@@ -10,3 +10,5 @@ The OpenAPI specification can be found at: https://app.swaggerhub.com/apis-docs/
 The Scholarly HTML can be found at: https://madalina1.github.io.
 
 The Trello Board: https://trello.com/b/dr0jbOq4/notis.
+
+Documents: https://docs.google.com/document/d/1CS0r-r_H1AEA3siUP8aumRnNSFXRxehI1GbKno5RpUM/edit.

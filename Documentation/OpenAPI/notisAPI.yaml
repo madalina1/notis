@@ -1,0 +1,562 @@
+openapi: 3.0.0
+info:
+  title: Notis API
+  description: This API is used to manage notarial info data.
+  version: 1.0.0
+servers:
+  - url: https://madalina1.github.io
+    description: Main server
+tags:
+- name: Notary
+  description: Operations available for notary
+- name: Translators
+  description: Operations available for translators
+- name: Services
+  description: Operations available for services
+paths:
+  /notary:
+    get:
+      summary: Retrieve all notaries.
+      tags:
+      - Notary
+      responses:
+        '200':
+          description: Returns a list of notaries.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FoundedNotariesResponse'
+        '400':
+          description: Unable to retrieve the Notary information.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+  /notary/{notaryId}:
+    delete:
+      summary: Remove notary by id.
+      tags:
+      - Notary
+      parameters:
+      - in: path
+        name: notaryId
+        required: true
+        schema:
+          type: integer
+          minimum: 1
+        description: The notary ID
+      responses:
+        '200':
+          description: Removes a notary by id.
+        '400':
+          description: Unable to retrieve the Notary information.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: A notary with the specified id was not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+  
+  /translator/{translatorId}:
+    delete:
+      summary: Get translator by id.
+      tags:
+      - Translators
+      parameters:
+      - in: path
+        name: translatorId
+        required: true
+        schema:
+          type: integer
+          minimum: 1
+        description: The translator ID
+      responses:
+        '200':
+          description: Removes a translator by id.
+        '400':
+          description: Unable to retrieve the Translator information.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: A translator with the specified id was not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+          
+  /notary/{id}:
+    get:
+      summary: Get notary by id.
+      tags:
+      - Notary
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+          minimum: 1
+        description: The notary ID
+      responses:
+        '200':
+          description: Returns a notary by id.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotaryResponse'
+        '400':
+          description: Unable to retrieve the Translator information.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: A notary with the specified id was not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+    
+  /translator:
+    get:
+      summary: Retrieve all translators.
+      tags:
+      - Translators
+      responses:
+        '200':
+          description: Returns a list of translators.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FoundedTranslatorsResponse'
+        '400':
+          description: Unable to retrieve the Translator information.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+ 
+          
+  /translator/{id}:
+    get:
+      summary: Get translator by id.
+      tags:
+      - Translators
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+          minimum: 1
+        description: The translator ID
+      responses:
+        '200':
+          description: Returns a translator.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TranslatorsResponse'
+        '400':
+          description: Unable to retrieve the Translator information.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: A translator with the specified id was not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+  /services:
+    get:
+      summary: Retrieve all services.
+      tags:
+      - Services
+      responses:
+        '200':
+          description: Returns a list of services.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServicesResponse'
+        '400':
+          description: Unable to retrieve the Services information.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+  /translator/create:
+    post:
+      summary: Add a new translator.
+      tags:
+      - Translators
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateTranslator'
+      responses:
+        '201':
+          description: Successfully created a new translator.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateTranslator'
+        '400':
+          description: Unable to retrieve the translator response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+  /notary/create:
+    post:
+      summary: Add a new notary.
+      tags:
+      - Notary
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateNotary'
+      responses:
+        '201':
+          description: Successfully created a new notary.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateNotary'
+        '400':
+          description: Unable to retrieve the notary response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+  /services/create:
+    post:
+      summary: Add a new service.
+      tags:
+      - Services
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Service'
+      responses:
+        '201':
+          description: Successfully created a new service.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Service'
+        '400':
+          description: Unable to retrieve the service response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+  /services/{id}:
+    delete:
+      summary: Get service by id.
+      tags:
+      - Services
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+          minimum: 1
+        description: The service ID
+      responses:
+        '200':
+          description: Removes a service by id.
+        '400':
+          description: Unable to retrieve the service information.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: A service with the specified id was not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+  /notary/{serviceId}:
+    post:
+      summary: Return all notary offices by filters and a given service
+      tags:
+      - Notary
+      parameters:
+      - in: path
+        name: serviceId
+        required: true
+        schema:
+          type: integer
+          minimum: 1
+        description: The service ID
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NotaryRequest'
+            example:
+              cities: ["Iasi", "Pascani"]
+              price: "50-100"
+              startHour: "10:30"
+              endHour: "18:30"
+              startDay: 1
+              endDay: 3
+              isSupportedForeignCitizens: true
+      responses:
+        '200':
+          description: Found nearby notary offices
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FoundedNotariesResponse'
+              example:
+                - id: 2
+                  city: "Iasi"
+                  fullName: "ABABEI  GHEORGHE"
+                  address: {
+                    street: "PALAT NR. 20",
+                    sector: null,
+                    bloc: "E2",
+                    scara: "45",
+                    latitude: "string",
+                    longitude: "string"
+                  }
+                  schedule: {
+                    1: "10:00-20:30",
+                    2: "10:00-20:30",
+                    3: "10:00-20:30",
+                    4: "10:00-20:30",
+                    5: "10:00-20:30"
+                  }
+                  isSupportedForeignCitizens: true
+                  price: "80-90"
+                  phoneNumber: "0752365482"
+        '400':
+          description: Unable to retrieve the notary response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: A notary with the specified filters was not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        default:
+          description: Unexpected error.
+  
+
+components:
+  schemas:
+    Notary:
+      type: object
+      properties:
+        isSupportedForeignCitizens:
+          type: boolean
+          
+    CreateNotary:
+      allOf:
+        - type: object
+          properties:
+            fullName: 
+              type: string
+            city:
+              type: string
+            schedule:
+              type: object
+            price:
+              type: string
+            phoneNumber:
+              type: string
+            isSupportedForeignCitizens:
+              type: boolean
+        - $ref: '#/components/schemas/Address'
+        - $ref: '#/components/schemas/Service'
+        
+    CreateTranslator:
+      allOf:
+        - type: object
+          properties:
+            fullName: 
+              type: string
+            city:
+              type: string
+            schedule:
+              type: object
+            price:
+              type: string
+            phoneNumber:
+              type: string
+            languages:
+              type: array
+              items:
+                type: string
+            authorizedNumer:
+              type: string
+        - $ref: '#/components/schemas/Address'
+        - $ref: '#/components/schemas/Service'
+        
+    
+    Translators:
+      type: object
+      properties:
+        languages:
+          type: array
+          items:
+            type: string
+        authorizedNumber:
+          type: number
+
+    Address:
+      type: object
+      properties:
+        street:
+          type: string
+        sector:
+          type: number
+        bloc:
+          type: string
+        scara:
+          type: string
+        latitude:
+          type: string
+        longitude:
+          type: string
+
+    Service:
+      type: object
+      properties:
+        id:
+          type: number
+        name:
+          type: string
+        necessaryPapers:
+          type: array
+          items:
+            type: string
+    
+    ServicesResponse:
+      type: array
+      uniqueItems: true
+      items:
+        $ref: '#/components/schemas/Service'
+
+    TypeOfService:
+      allOf:     
+        - type: object
+          properties:
+            id:
+              type: number
+            city:
+              type: string
+            fullName:
+              type: string
+            schedule:
+              type: object
+            price:
+              type: string
+            phoneNumber:
+              type: string
+            review:
+              type: number
+        - $ref: '#/components/schemas/Address'
+
+    NotaryResponse:
+      allOf:     
+        - $ref: '#/components/schemas/TypeOfService'
+        - type: object
+          properties:
+            isSupportedForeignCitizens:
+              type: boolean
+    FoundedNotariesResponse:
+      type: array
+      uniqueItems: true
+      items:
+        $ref: '#/components/schemas/NotaryResponse'
+
+    TranslatorsResponse:
+      allOf:     
+        - $ref: '#/components/schemas/TypeOfService'
+        - type: object
+          properties:
+            languages:
+              type: array
+              items:
+                type: string
+            authorizedNumber:
+              type: number
+    FoundedTranslatorsResponse:
+      type: array
+      uniqueItems: true
+      items:
+        $ref: '#/components/schemas/TranslatorsResponse'
+    NotaryRequest:
+      allOf:     
+        - type: object
+          properties:
+            cities:
+              type: array
+              items:
+                type: string
+            price:
+              type: string
+            startHour:
+              type: string
+            endHour:
+              type: string
+            startDay:
+              type: number
+            endDay:
+              type: number
+            isSupportedForeignCitizens:
+              type: boolean
+
+    Error:
+      type: object
+      properties:
+        code:
+          type: number
+        message: 
+          type: string
+          
