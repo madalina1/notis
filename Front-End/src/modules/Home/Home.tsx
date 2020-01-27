@@ -44,7 +44,28 @@ class Home extends Component<MyProps, MyState> {
 					center={position}
 
 				>
-					<CustomMarker position={position} text="Hello" />
+					<CustomMarker 
+						position={position} 
+						text="Hello" 
+						title="Alina Notary" 
+						name="Alina Aanei" 
+						languages={["English", "Romanian"]}  
+						phoneNumber="0751753645"
+						schedule={{
+							"Mon": {startH: '09:00', endH: '15:00', specialHours: null},
+							"Tue": {startH: '09:00', endH: '15:00', specialHours: null},
+							"Wed": {startH: '09:00', endH: '15:00', specialHours: null},
+							"Thu": {startH: '09:00', endH: '15:00', specialHours: null},
+							"Fri": {startH: '09:00', endH: '15:00', specialHours: null},
+							"Sat": {startH: '09:00', endH: '15:00', specialHours: null},
+							"Sun": {startH: '09:00', endH: '15:00', specialHours: null}
+						}}
+						address={{
+							city: "Bacau",
+							locality: "Bacau",
+							courtOfAppeal: "Bacau"
+						}}
+					/>
 				</GoogleMap>
 			</LoadScript>
 		)

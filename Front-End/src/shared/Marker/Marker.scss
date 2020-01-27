@@ -1,0 +1,43 @@
+.marker-title {
+    height: 50%;
+    background-color: #0277bd;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 18px;
+    flex-direction: column;
+
+    h2 {
+        margin: 0;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        text-transform: capitalize;
+        margin-bottom: 0;
+    }
+}
+
+.list-items {
+    
+}
+
+.list-icon {
+    min-width: 28px !important;
+}
+
+.list-items-text {
+    display: flex;
+    justify-content: space-between;
+    
+    & h5 {
+        font-weight: 400;
+        margin: 0;
+    }
+
+    & .schedule {
+        display: flex;
+    }
+}

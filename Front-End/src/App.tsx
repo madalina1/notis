@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Switch } from 'react-router-dom';
 import { routes } from './modules/routes/routes';
 import { RouteWithSubRoutes } from './modules/routes/RouteConfig';
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
-import TreeView from '@material-ui/lab/TreeView';
 import './assets/styles/_base.scss';
-import { Drawer, Divider, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
+import { Drawer, Divider, List, ListItem, ListItemIcon, ListItemText, Typography } from '@material-ui/core';
 import { FaEnvelopeOpenText } from 'react-icons/fa';
 import { MdGTranslate } from "react-icons/md";
 import StyledTreeItem from './shared/StyledTreeItem/StyledTreeItem';
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { FiFilter } from "react-icons/fi";
+import logo from './assets/images/icon.png';
 
 const drawerWidth = 240;
 
@@ -47,37 +47,21 @@ const App: React.FC = () => {
 				}}
 				anchor="left"
 			>
-				<TreeView
-					className={classes.root}
-					defaultExpanded={['3']}
-					defaultCollapseIcon={<IoIosArrowDown />}
-					defaultExpandIcon={<IoIosArrowForward />}
-					defaultEndIcon={<div style={{ width: 24 }} />}
-				>
-					<StyledTreeItem nodeId="3" labelText="Categories" labelIcon={FiFilter}>
-						<StyledTreeItem
-							nodeId="5"
-							labelText="Social"
-							labelIcon={FiFilter}
-							labelInfo="90"
-							color="#1a73e8"
-							bgColor="#e8f0fe"
-						/>
-						<StyledTreeItem
-							nodeId="6"
-							labelText="Updates"
-							labelIcon={FiFilter}
-							labelInfo="2,294"
-							color="#e3742f"
-							bgColor="#fcefe3"
-						/>
-					</StyledTreeItem>
-				</TreeView>
+				<img src={logo} width="150px" height="auto" alt="icon" className="logo"/>
+				<Divider />
+				<List className="menu-container">
+					{['Filter by', 'Price'].map((text, index) => (
+						<ListItem key={text} className="menu-element">
+							{index === 0 && <ListItemIcon className="menu-icon">{<FiFilter />}</ListItemIcon>}
+							<ListItemText primary={index===0 ? <Typography style={{ fontWeight: 'bold' }}>{text}</Typography> : text} className={index === 0 ? 'menu-filter' : 'menu-filter-element'}/>
+						</ListItem>
+					))}
+				</List>
 				<Divider />
 				<List>
 					{['See all notaries', 'See all translators'].map((text, index) => (
 						<ListItem button key={text}>
-							<ListItemIcon>{index === 0 ? <FaEnvelopeOpenText /> : <MdGTranslate />}</ListItemIcon>
+							<ListItemIcon className="menu-icon">{index === 0 ? <FaEnvelopeOpenText /> : <MdGTranslate />}</ListItemIcon>
 							<ListItemText primary={text} />
 						</ListItem>
 					))}

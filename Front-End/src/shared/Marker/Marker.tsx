@@ -5,6 +5,12 @@ import { Marker } from '@react-google-maps/api';
 import { Drawer, List, ListItem, ListItemIcon, ListItemText, Divider } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { FaBeer } from 'react-icons/fa';
+import './Marker.scss';
+
+
+import { MdLanguage, MdSettingsPhone } from "react-icons/md";
+import { AiOutlineSchedule } from "react-icons/ai";
+
 
 const useStyles = makeStyles({
     list: {
@@ -43,16 +49,36 @@ const CustomMarker = (props: any) => {
         <div
           className={classes.list}
           role="presentation"
-          onClick={toggleDrawer(side, false)}
           onKeyDown={toggleDrawer(side, false)}
         >
+          <div className="marker-title">
+            <h2>{props.title}</h2>
+            <h4>{props.name}</h4>
+          </div>
           <List>
-            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-              <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <FaBeer /> : <FaBeer />}</ListItemIcon>
-                <ListItemText primary={text} />
+              <ListItem key="Languages" className="list-items">
+                <ListItemIcon className="list-icon">{<MdLanguage />}</ListItemIcon>
+                <ListItemText primary={<div className="list-items-text"><h5>Languages</h5><h5>{props.languages.join(", ")}</h5></div>} />
               </ListItem>
-            ))}
+              <ListItem key="Phone Number" className="list-items">
+                <ListItemIcon className="list-icon">{<MdSettingsPhone />}</ListItemIcon>
+                <ListItemText primary={<div className="list-items-text"><h5>Phone Number</h5><h5 style={{marginRight: '34px'}}>{props.phoneNumber}</h5></div>} />
+              </ListItem>
+              <ListItem key="Schedule" className="list-items">
+                <ListItemIcon className="list-icon">{<AiOutlineSchedule />}</ListItemIcon>
+                <ListItemText primary={<div className="list-items-text">
+                  <h5 style={{display: 'flex', alignItems: 'center'}}>Schedule</h5>
+                  <div style={{marginRight: '-2px'}}>
+                    {
+                      Object.keys(props.schedule).map((element: any, key: any) => <h5 className="schedule" key={key}><b>{element}</b>: {props.schedule[element].startH} - {props.schedule[element].endH}</h5>)
+                    }
+                  </div>
+                </div>} />
+              </ListItem>
+              <ListItem key="Address" className="list-items">
+                <ListItemIcon className="list-icon">{<MdSettingsPhone />}</ListItemIcon>
+                <ListItemText primary={<div className="list-items-text"><h5>Address</h5><h5 style={{marginRight: '34px'}}>{Object.keys(props.address).map((element: any) => `${props.address[element]}`)}</h5></div>} />
+              </ListItem>
           </List>
           <Divider />
           <List>
