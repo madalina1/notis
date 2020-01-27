@@ -1,5 +1,5 @@
 .marker-title {
-    height: 50%;
+    height: 40%;
     background-color: #0277bd;
     color: #ffffff;
     display: flex;
@@ -40,4 +40,31 @@
     & .schedule {
         display: flex;
     }
+}
+
+.icon-style {
+    width: 36px !important;
+    height: auto !important;
+    margin-right: 20px !important;
+
+    &.twitter {
+        background-color: #42a5f5 !important;
+
+        &:hover {
+            background-color: #2196f3 !important;
+        }
+    }
+}
+
+.rating-container {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating-text {
+    font-size: 14px !important;
+    margin: 8px 0 !important;
+    font-weight: bold !important;
 }
