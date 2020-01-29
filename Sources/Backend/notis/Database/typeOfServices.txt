@@ -1,0 +1,204 @@
+ <!-- http://www.semanticweb.org/notis/Act_pe_care_solicitati_legalizarea_semnaturii -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Act_pe_care_solicitati_legalizarea_semnaturii">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Act_testament -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Act_testament">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Acte_de_proprietate -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Acte_de_proprietate">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Antecontracte_de_vanzare-cumparare -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Antecontracte_de_vanzare-cumparare">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Acte_de_proprietate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Certificat_de_casatorie -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Certificat_de_casatorie">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Certificat_de_deces -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Certificat_de_deces">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Certificat_de_nastere -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Certificat_de_nastere">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Certificat_de_nastere_ale_copiilor_minori -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Certificat_de_nastere_ale_copiilor_minori">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Certificat_de_urbanism -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Certificat_de_urbanism">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Certificat_fiscal -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Certificat_fiscal">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Contracte_de_comodat_sau_inchiriere -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Contracte_de_comodat_sau_inchiriere">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Acte_de_proprietate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Contracte_de_ipoteca_imobiliara -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Contracte_de_ipoteca_imobiliara">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Acte_de_proprietate"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_fiscal"/>
+        <notis2:needs rdf:resource="&notis2;Documentatie_cadastrala"/>
+        <notis2:needs rdf:resource="&notis2;Extras_de_carte_funciara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Contracte_de_partaj_sau_dezmembrare_sau_alipire -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Contracte_de_partaj_sau_dezmembrare_sau_alipire">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Acte_de_proprietate"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_de_urbanism"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_fiscal"/>
+        <notis2:needs rdf:resource="&notis2;Documentatie_cadastrala"/>
+        <notis2:needs rdf:resource="&notis2;Extras_de_carte_funciara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Acte_de_proprietate"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_fiscal"/>
+        <notis2:needs rdf:resource="&notis2;Extras_de_carte_funciara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Declaratii_sau_procuri -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Declaratii_sau_procuri">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Inscrisuri_in_functie_de_specificul_declaratiei_sau_procurii"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Documentatie_cadastrala -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Documentatie_cadastrala">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Extras_de_carte_funciara -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Extras_de_carte_funciara">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+    <!-- http://www.semanticweb.org/notis/Inscrisuri_in_functie_de_specificul_declaratiei_sau_procurii -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Inscrisuri_in_functie_de_specificul_declaratiei_sau_procurii">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Legalizari_de_copii_ale_unor_inscrisuri -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Legalizari_de_copii_ale_unor_inscrisuri">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Act_pe_care_solicitati_legalizarea_semnaturii"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Procedura_divortului_prin_acordul_sotilor -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Procedura_divortului_prin_acordul_sotilor">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_de_casatorie"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_de_nastere"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_de_nastere_ale_copiilor_minori"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Procura_succesorala -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Procura_succesorala">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Act_testament"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_de_casatorie"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_de_deces"/>
+    </owl:NamedIndividual>
+
+
+    <!-- http://www.semanticweb.org/notis/Testamente -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Testamente">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Acte_de_proprietate"/>
+        <notis2:needs rdf:resource="&notis2;Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul"/>
+    </owl:NamedIndividual>
+    

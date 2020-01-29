@@ -1,0 +1,1001 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY ns1 "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY notis "http://www.semanticweb.org/notis#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY notis2 "http://www.semanticweb.org/notis/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/notis#"
+     xml:base="http://www.semanticweb.org/notis"
+     xmlns:ns1="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:notis2="http://www.semanticweb.org/notis/"
+     xmlns:notis="http://www.semanticweb.org/notis#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/notis"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/address -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;address"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/authorisationNr -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;authorisationNr"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/city -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;city"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/coordinates -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;coordinates"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/county -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;county"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/courtOfAppeal -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;courtOfAppeal"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/firstName -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;firstName"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/isSupportedForeignCitizens -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;isSupportedForeignCitizens"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/languages -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;languages"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/lastName -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;lastName"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/locality -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;locality"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/phoneNo -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;phoneNo"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/schedule -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;schedule"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/street -->
+
+    <owl:AnnotationProperty rdf:about="&ns1;street"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/notis#isTypeOf -->
+
+    <owl:ObjectProperty rdf:about="&notis;isTypeOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/hasProperties -->
+
+    <owl:ObjectProperty rdf:about="&notis2;hasProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/hasServices -->
+
+    <owl:ObjectProperty rdf:about="&notis2;hasServices"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/needs -->
+
+    <owl:ObjectProperty rdf:about="&notis2;needs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/provideService -->
+
+    <owl:ObjectProperty rdf:about="&notis2;provideService">
+        <rdfs:range rdf:resource="&notis2;notary"/>
+        <rdfs:domain rdf:resource="&notis2;notaryPerson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/provides -->
+
+    <owl:ObjectProperty rdf:about="&notis2;provides">
+        <rdfs:range rdf:resource="&notis2;translation"/>
+        <rdfs:domain rdf:resource="&notis2;translator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Place -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis#authorizedNumber -->
+
+    <owl:DatatypeProperty rdf:about="&notis;authorizedNumber"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis#isSupportedForeignCitizens -->
+
+    <owl:DatatypeProperty rdf:about="&notis;isSupportedForeignCitizens"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis#languages -->
+
+    <owl:DatatypeProperty rdf:about="&notis;languages"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis#necessaryPapers -->
+
+    <owl:DatatypeProperty rdf:about="&notis;necessaryPapers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis#serviceName -->
+
+    <owl:DatatypeProperty rdf:about="&notis;serviceName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/phone -->
+
+    <owl:DatatypeProperty rdf:about="&notis2;phone"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/price -->
+
+    <owl:DatatypeProperty rdf:about="&notis2;price"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/schedule -->
+
+    <owl:DatatypeProperty rdf:about="&notis2;schedule"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Person -->
+
+    <owl:Class rdf:about="&notis2;Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/necessary-papers -->
+
+    <owl:Class rdf:about="&notis2;necessary-papers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/notary -->
+
+    <owl:Class rdf:about="&notis2;notary">
+        <rdfs:subClassOf rdf:resource="&notis2;service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/notary-type-of-service -->
+
+    <owl:Class rdf:about="&notis2;notary-type-of-service"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/notaryPerson -->
+
+    <owl:Class rdf:about="&notis2;notaryPerson">
+        <rdfs:subClassOf rdf:resource="&notis2;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/service -->
+
+    <owl:Class rdf:about="&notis2;service"/>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/translation -->
+
+    <owl:Class rdf:about="&notis2;translation">
+        <rdfs:subClassOf rdf:resource="&notis2;service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/translator -->
+
+    <owl:Class rdf:about="&notis2;translator">
+        <rdfs:subClassOf rdf:resource="&notis2;Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="&ns1;Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Act_pe_care_solicitati_legalizarea_semnaturii -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Act_pe_care_solicitati_legalizarea_semnaturii">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Act_testament -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Act_testament">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Acte_de_proprietate -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Acte_de_proprietate">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Adina_Mihaela_Ababei -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Adina_Mihaela_Ababei">
+        <rdf:type rdf:resource="&notis2;translator"/>
+        <ns1:firstName>Adina Mihaela</ns1:firstName>
+        <ns1:lastName>Ababei</ns1:lastName>
+        <ns1:authorisationNr>18372</ns1:authorisationNr>
+        <ns1:languages>[&apos;Franceză&apos;]</ns1:languages>
+        <ns1:schedule>{&apos;L&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 18}, &apos;M&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 18}, &apos;Mi&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 16}, &apos;J&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 18}, &apos;V&apos;: &apos;CLOSE&apos;, &apos;S&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 16}, &apos;D&apos;: &apos;CLOSE&apos;}</ns1:schedule>
+        <ns1:phoneNo>0742529242</ns1:phoneNo>
+        <ns1:address rdf:resource="http://schema.org/address/tr4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Alina-Mihaela_Ababei -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Alina-Mihaela_Ababei">
+        <rdf:type rdf:resource="&notis2;translator"/>
+        <ns1:firstName>Alina-Mihaela</ns1:firstName>
+        <ns1:schedule>{&apos;L&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 16}, &apos;M&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 17}, &apos;Mi&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 16}, &apos;J&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 19}, &apos;V&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 15}, &apos;S&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 15}, &apos;D&apos;: &apos;CLOSE&apos;}</ns1:schedule>
+        <ns1:languages>[&apos;Engleză&apos;, &apos;Franceză&apos;]</ns1:languages>
+        <ns1:phoneNo>0742956376</ns1:phoneNo>
+        <ns1:authorisationNr>33052</ns1:authorisationNr>
+        <ns1:lastName>Ababei</ns1:lastName>
+        <ns1:address rdf:resource="http://schema.org/address/tr5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Alina-Nicoleta_Aamoum -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Alina-Nicoleta_Aamoum">
+        <rdf:type rdf:resource="&notis2;translator"/>
+        <ns1:phoneNo>2126679528</ns1:phoneNo>
+        <ns1:authorisationNr>5880</ns1:authorisationNr>
+        <ns1:languages>[&apos;Franceză&apos;, &apos;Rusă&apos;]</ns1:languages>
+        <ns1:lastName>Aamoum</ns1:lastName>
+        <ns1:schedule>{&apos;L&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 17}, &apos;M&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 17}, &apos;Mi&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 16}, &apos;J&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 18}, &apos;V&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 15}, &apos;S&apos;: &apos;CLOSE&apos;, &apos;D&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}}</ns1:schedule>
+        <ns1:firstName>Alina-Nicoleta</ns1:firstName>
+        <ns1:address rdf:resource="http://schema.org/address/tr0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Alina_Aanei -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Alina_Aanei">
+        <rdf:type rdf:resource="&notis2;translator"/>
+        <ns1:phoneNo>0743139448</ns1:phoneNo>
+        <ns1:lastName>Aanei</ns1:lastName>
+        <ns1:firstName>Alina</ns1:firstName>
+        <ns1:authorisationNr>8733</ns1:authorisationNr>
+        <ns1:schedule>{&apos;L&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 15}, &apos;M&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 19}, &apos;Mi&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 18}, &apos;J&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 18}, &apos;V&apos;: &apos;CLOSE&apos;, &apos;S&apos;: &apos;CLOSE&apos;, &apos;D&apos;: &apos;CLOSE&apos;}</ns1:schedule>
+        <ns1:languages>[&apos;Engleză&apos;, &apos;Franceză&apos;]</ns1:languages>
+        <ns1:address rdf:resource="http://schema.org/address/tr1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Andreea-Ramona_Aanei -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Andreea-Ramona_Aanei">
+        <rdf:type rdf:resource="&notis2;translator"/>
+        <ns1:authorisationNr>32150</ns1:authorisationNr>
+        <ns1:firstName>Andreea-Ramona</ns1:firstName>
+        <ns1:languages>[&apos;Italiană&apos;]</ns1:languages>
+        <ns1:schedule>{&apos;L&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 19}, &apos;M&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 18}, &apos;Mi&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 19}, &apos;J&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;V&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 15}, &apos;S&apos;: &apos;CLOSE&apos;, &apos;D&apos;: &apos;CLOSE&apos;}</ns1:schedule>
+        <ns1:lastName>Aanei</ns1:lastName>
+        <ns1:phoneNo>0749765569</ns1:phoneNo>
+        <ns1:address rdf:resource="http://schema.org/address/tr2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Angela-Ilinca_Ababei -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Angela-Ilinca_Ababei">
+        <rdf:type rdf:resource="&notis2;translator"/>
+        <ns1:phoneNo>0744739340</ns1:phoneNo>
+        <ns1:firstName>Angela-Ilinca</ns1:firstName>
+        <ns1:languages>[&apos;Engleză&apos;, &apos;Franceză&apos;]</ns1:languages>
+        <ns1:authorisationNr>6104</ns1:authorisationNr>
+        <ns1:lastName>Ababei</ns1:lastName>
+        <ns1:schedule>{&apos;L&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 18}, &apos;M&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 17}, &apos;Mi&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 16}, &apos;J&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 15}, &apos;V&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 17}, &apos;S&apos;: &apos;CLOSE&apos;, &apos;D&apos;: &apos;CLOSE&apos;}</ns1:schedule>
+        <ns1:address rdf:resource="http://schema.org/address/tr6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Antecontracte_de_vanzare-cumparare -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Antecontracte_de_vanzare-cumparare">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Acte_de_proprietate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/CLAUDIA_AVASILOAE -->
+
+    <owl:NamedIndividual rdf:about="&notis2;CLAUDIA_AVASILOAE">
+        <rdf:type rdf:resource="&notis2;notaryPerson"/>
+        <ns1:isSupportedForeignCitizens rdf:datatype="&xsd;integer">1</ns1:isSupportedForeignCitizens>
+        <ns1:lastName>AVASILOAE</ns1:lastName>
+        <ns1:firstName>CLAUDIA</ns1:firstName>
+        <ns1:schedule>{&apos;Mon&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 16}, &apos;Tue&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 19}, &apos;Wed&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 16}, &apos;Thu&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;Fri&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 17}, &apos;Sat&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 17}, &apos;Sun&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}}</ns1:schedule>
+        <ns1:phoneNo>0742245962</ns1:phoneNo>
+        <ns1:address rdf:resource="http://schema.org/address/4"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_comodat_sau_inchiriere"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_ipoteca_imobiliara"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_partaj_sau_dezmembrare_sau_alipire"/>
+        <notis2:hasServices rdf:resource="&notis2;Legalizari_de_copii_ale_unor_inscrisuri"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Carmen_Beatrice_Ababei -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Carmen_Beatrice_Ababei">
+        <rdf:type rdf:resource="&notis2;translator"/>
+        <ns1:phoneNo>0746911550</ns1:phoneNo>
+        <ns1:authorisationNr>6396</ns1:authorisationNr>
+        <ns1:languages>[&apos;Franceză&apos;]</ns1:languages>
+        <ns1:schedule>{&apos;L&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 17}, &apos;M&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 19}, &apos;Mi&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 18}, &apos;J&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;V&apos;: &apos;CLOSE&apos;, &apos;S&apos;: &apos;CLOSE&apos;, &apos;D&apos;: &apos;CLOSE&apos;}</ns1:schedule>
+        <ns1:firstName>Carmen Beatrice</ns1:firstName>
+        <ns1:lastName>Ababei</ns1:lastName>
+        <ns1:address rdf:resource="http://schema.org/address/tr7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Certificat_de_casatorie -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Certificat_de_casatorie">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Certificat_de_deces -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Certificat_de_deces">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Certificat_de_nastere -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Certificat_de_nastere">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Certificat_de_nastere_ale_copiilor_minori -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Certificat_de_nastere_ale_copiilor_minori">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Certificat_de_urbanism -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Certificat_de_urbanism">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Certificat_fiscal -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Certificat_fiscal">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Contracte_de_comodat_sau_inchiriere -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Contracte_de_comodat_sau_inchiriere">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Acte_de_proprietate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Contracte_de_ipoteca_imobiliara -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Contracte_de_ipoteca_imobiliara">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Acte_de_proprietate"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_fiscal"/>
+        <notis2:needs rdf:resource="&notis2;Documentatie_cadastrala"/>
+        <notis2:needs rdf:resource="&notis2;Extras_de_carte_funciara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Contracte_de_partaj_sau_dezmembrare_sau_alipire -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Contracte_de_partaj_sau_dezmembrare_sau_alipire">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Acte_de_proprietate"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_de_urbanism"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_fiscal"/>
+        <notis2:needs rdf:resource="&notis2;Documentatie_cadastrala"/>
+        <notis2:needs rdf:resource="&notis2;Extras_de_carte_funciara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Acte_de_proprietate"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_fiscal"/>
+        <notis2:needs rdf:resource="&notis2;Extras_de_carte_funciara"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/DANIELA_BADARAU -->
+
+    <owl:NamedIndividual rdf:about="&notis2;DANIELA_BADARAU">
+        <rdf:type rdf:resource="&notis2;notaryPerson"/>
+        <ns1:isSupportedForeignCitizens rdf:datatype="&xsd;integer">1</ns1:isSupportedForeignCitizens>
+        <ns1:phoneNo>0744437114</ns1:phoneNo>
+        <ns1:firstName>DANIELA</ns1:firstName>
+        <ns1:schedule>{&apos;Mon&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 17}, &apos;Tue&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 18}, &apos;Wed&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 18}, &apos;Thu&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 18}, &apos;Fri&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 15}, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 16}}</ns1:schedule>
+        <ns1:lastName>BADARAU</ns1:lastName>
+        <ns1:address rdf:resource="http://schema.org/address/5"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_comodat_sau_inchiriere"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_ipoteca_imobiliara"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_partaj_sau_dezmembrare_sau_alipire"/>
+        <notis2:hasServices rdf:resource="&notis2;Legalizari_de_copii_ale_unor_inscrisuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Procura_succesorala"/>
+        <notis2:hasServices rdf:resource="&notis2;Testamente"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Declaratii_sau_procuri -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Declaratii_sau_procuri">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Inscrisuri_in_functie_de_specificul_declaratiei_sau_procurii"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Documentatie_cadastrala -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Documentatie_cadastrala">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Extras_de_carte_funciara -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Extras_de_carte_funciara">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/GABRIELA_ANTON -->
+
+    <owl:NamedIndividual rdf:about="&notis2;GABRIELA_ANTON">
+        <rdf:type rdf:resource="&notis2;notaryPerson"/>
+        <ns1:isSupportedForeignCitizens rdf:datatype="&xsd;integer">1</ns1:isSupportedForeignCitizens>
+        <ns1:phoneNo>0741384595</ns1:phoneNo>
+        <ns1:schedule>{&apos;Mon&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 16}, &apos;Tue&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 16}, &apos;Wed&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 15}, &apos;Thu&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;Fri&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 18}, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: &apos;CLOSE&apos;}</ns1:schedule>
+        <ns1:firstName>GABRIELA</ns1:firstName>
+        <ns1:lastName>ANTON</ns1:lastName>
+        <ns1:address rdf:resource="http://schema.org/address/3"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_comodat_sau_inchiriere"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_ipoteca_imobiliara"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_partaj_sau_dezmembrare_sau_alipire"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere"/>
+        <notis2:hasServices rdf:resource="&notis2;Declaratii_sau_procuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Legalizari_de_copii_ale_unor_inscrisuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Procura_succesorala"/>
+        <notis2:hasServices rdf:resource="&notis2;Testamente"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/IOANA_ANGELA_BELDEANU -->
+
+    <owl:NamedIndividual rdf:about="&notis2;IOANA_ANGELA_BELDEANU">
+        <rdf:type rdf:resource="&notis2;notaryPerson"/>
+        <ns1:isSupportedForeignCitizens rdf:datatype="&xsd;integer">0</ns1:isSupportedForeignCitizens>
+        <ns1:firstName>IOANA ANGELA</ns1:firstName>
+        <ns1:schedule>{&apos;Mon&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 15}, &apos;Tue&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 15}, &apos;Wed&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 16}, &apos;Thu&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 17}, &apos;Fri&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 17}, &apos;Sat&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;Sun&apos;: &apos;CLOSE&apos;}</ns1:schedule>
+        <ns1:lastName>BELDEANU</ns1:lastName>
+        <ns1:phoneNo>0745936966</ns1:phoneNo>
+        <ns1:address rdf:resource="http://schema.org/address/9"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_comodat_sau_inchiriere"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere"/>
+        <notis2:hasServices rdf:resource="&notis2;Declaratii_sau_procuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Legalizari_de_copii_ale_unor_inscrisuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Procura_succesorala"/>
+        <notis2:hasServices rdf:resource="&notis2;Testamente"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Inscrisuri_in_functie_de_specificul_declaratiei_sau_procurii -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Inscrisuri_in_functie_de_specificul_declaratiei_sau_procurii">
+        <rdf:type rdf:resource="&notis2;necessary-papers"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Ioan_Ababei -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Ioan_Ababei">
+        <rdf:type rdf:resource="&notis2;translator"/>
+        <ns1:languages>[&apos;Rusă&apos;]</ns1:languages>
+        <ns1:schedule>{&apos;L&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 19}, &apos;M&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 15}, &apos;Mi&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}, &apos;J&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 19}, &apos;V&apos;: &apos;CLOSE&apos;, &apos;S&apos;: &apos;CLOSE&apos;, &apos;D&apos;: &apos;CLOSE&apos;}</ns1:schedule>
+        <ns1:phoneNo>0236460085</ns1:phoneNo>
+        <ns1:firstName>Ioan</ns1:firstName>
+        <ns1:authorisationNr>1889</ns1:authorisationNr>
+        <ns1:lastName>Ababei</ns1:lastName>
+        <ns1:address rdf:resource="http://schema.org/address/tr8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Legalizari_de_copii_ale_unor_inscrisuri -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Legalizari_de_copii_ale_unor_inscrisuri">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Act_pe_care_solicitati_legalizarea_semnaturii"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/MARIANA_OTILIA_BALAN -->
+
+    <owl:NamedIndividual rdf:about="&notis2;MARIANA_OTILIA_BALAN">
+        <rdf:type rdf:resource="&notis2;notaryPerson"/>
+        <ns1:isSupportedForeignCitizens rdf:datatype="&xsd;integer">0</ns1:isSupportedForeignCitizens>
+        <ns1:schedule>{&apos;Mon&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 17}, &apos;Tue&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 18}, &apos;Wed&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;Thu&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 15}, &apos;Fri&apos;: &apos;CLOSE&apos;, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: &apos;CLOSE&apos;}</ns1:schedule>
+        <ns1:phoneNo>0743021581</ns1:phoneNo>
+        <ns1:firstName>MARIANA OTILIA</ns1:firstName>
+        <ns1:lastName>BALAN</ns1:lastName>
+        <ns1:address rdf:resource="http://schema.org/address/7"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_comodat_sau_inchiriere"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_ipoteca_imobiliara"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere"/>
+        <notis2:hasServices rdf:resource="&notis2;Declaratii_sau_procuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Legalizari_de_copii_ale_unor_inscrisuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Testamente"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Mihaela_Aanei -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Mihaela_Aanei">
+        <rdf:type rdf:resource="&notis2;translator"/>
+        <ns1:schedule>{&apos;L&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 16}, &apos;M&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 15}, &apos;Mi&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;J&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 17}, &apos;V&apos;: &apos;CLOSE&apos;, &apos;S&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 16}, &apos;D&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 16}}</ns1:schedule>
+        <ns1:phoneNo>0721921461</ns1:phoneNo>
+        <ns1:lastName>Aanei</ns1:lastName>
+        <ns1:languages>[&apos;Engleză&apos;]</ns1:languages>
+        <ns1:firstName>Mihaela</ns1:firstName>
+        <ns1:authorisationNr>8803</ns1:authorisationNr>
+        <ns1:address rdf:resource="http://schema.org/address/tr3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Oana-Mihaela_Ababei -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Oana-Mihaela_Ababei">
+        <rdf:type rdf:resource="&notis2;translator"/>
+        <ns1:schedule>{&apos;L&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 19}, &apos;M&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 16}, &apos;Mi&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 17}, &apos;J&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 16}, &apos;V&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 19}, &apos;S&apos;: &apos;CLOSE&apos;, &apos;D&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 18}}</ns1:schedule>
+        <ns1:lastName>Ababei</ns1:lastName>
+        <ns1:firstName>Oana-Mihaela</ns1:firstName>
+        <ns1:phoneNo>0747676968</ns1:phoneNo>
+        <ns1:authorisationNr>36656</ns1:authorisationNr>
+        <ns1:languages>[&apos;Franceză&apos;]</ns1:languages>
+        <ns1:address rdf:resource="http://schema.org/address/tr9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Procedura_divortului_prin_acordul_sotilor -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Procedura_divortului_prin_acordul_sotilor">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_de_casatorie"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_de_nastere"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_de_nastere_ale_copiilor_minori"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Procura_succesorala -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Procura_succesorala">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Act_testament"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_de_casatorie"/>
+        <notis2:needs rdf:resource="&notis2;Certificat_de_deces"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/RALUCA_ANDRIESCU -->
+
+    <owl:NamedIndividual rdf:about="&notis2;RALUCA_ANDRIESCU">
+        <rdf:type rdf:resource="&notis2;notaryPerson"/>
+        <ns1:isSupportedForeignCitizens rdf:datatype="&xsd;integer">0</ns1:isSupportedForeignCitizens>
+        <ns1:lastName>ANDRIESCU</ns1:lastName>
+        <ns1:phoneNo>0749962214</ns1:phoneNo>
+        <ns1:firstName>RALUCA</ns1:firstName>
+        <ns1:phoneNo>0742752791</ns1:phoneNo>
+        <ns1:schedule>{&apos;Mon&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 19}, &apos;Tue&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 15}, &apos;Wed&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 15}, &apos;Thu&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 15}, &apos;Fri&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 16}, &apos;Sat&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 17}, &apos;Sun&apos;: &apos;CLOSE&apos;}</ns1:schedule>
+        <ns1:schedule>{&apos;Mon&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}, &apos;Tue&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 19}, &apos;Wed&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 17}, &apos;Thu&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;Fri&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 19}, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 17}}</ns1:schedule>
+        <ns1:address rdf:resource="http://schema.org/address/0"/>
+        <ns1:address rdf:resource="http://schema.org/address/1"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_comodat_sau_inchiriere"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_ipoteca_imobiliara"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_partaj_sau_dezmembrare_sau_alipire"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere"/>
+        <notis2:hasServices rdf:resource="&notis2;Declaratii_sau_procuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Legalizari_de_copii_ale_unor_inscrisuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Testamente"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/RAZVAN_ANTOHIE -->
+
+    <owl:NamedIndividual rdf:about="&notis2;RAZVAN_ANTOHIE">
+        <rdf:type rdf:resource="&notis2;notaryPerson"/>
+        <ns1:isSupportedForeignCitizens rdf:datatype="&xsd;integer">0</ns1:isSupportedForeignCitizens>
+        <ns1:schedule>{&apos;Mon&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}, &apos;Tue&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 17}, &apos;Wed&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 19}, &apos;Thu&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 15}, &apos;Fri&apos;: &apos;CLOSE&apos;, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}}</ns1:schedule>
+        <ns1:phoneNo>0743195717</ns1:phoneNo>
+        <ns1:firstName>RAZVAN</ns1:firstName>
+        <ns1:lastName>ANTOHIE</ns1:lastName>
+        <ns1:address rdf:resource="http://schema.org/address/2"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_comodat_sau_inchiriere"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_ipoteca_imobiliara"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_partaj_sau_dezmembrare_sau_alipire"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere"/>
+        <notis2:hasServices rdf:resource="&notis2;Declaratii_sau_procuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Legalizari_de_copii_ale_unor_inscrisuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Testamente"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/SIMONA-STEFANIA_BALAN -->
+
+    <owl:NamedIndividual rdf:about="&notis2;SIMONA-STEFANIA_BALAN">
+        <rdf:type rdf:resource="&notis2;notaryPerson"/>
+        <ns1:isSupportedForeignCitizens rdf:datatype="&xsd;integer">0</ns1:isSupportedForeignCitizens>
+        <ns1:lastName>BALAN</ns1:lastName>
+        <ns1:phoneNo>0743662338</ns1:phoneNo>
+        <ns1:firstName>SIMONA-STEFANIA</ns1:firstName>
+        <ns1:schedule>{&apos;Mon&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 18}, &apos;Tue&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 15}, &apos;Wed&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 19}, &apos;Thu&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 18}, &apos;Fri&apos;: &apos;CLOSE&apos;, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 15}}</ns1:schedule>
+        <ns1:address rdf:resource="http://schema.org/address/8"/>
+        <notis2:hasServices rdf:resource="&notis2;Antecontracte_de_vanzare-cumparare"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_comodat_sau_inchiriere"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_ipoteca_imobiliara"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_partaj_sau_dezmembrare_sau_alipire"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere"/>
+        <notis2:hasServices rdf:resource="&notis2;Declaratii_sau_procuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Legalizari_de_copii_ale_unor_inscrisuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Testamente"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/STELA_BADARAU -->
+
+    <owl:NamedIndividual rdf:about="&notis2;STELA_BADARAU">
+        <rdf:type rdf:resource="&notis2;notaryPerson"/>
+        <ns1:isSupportedForeignCitizens rdf:datatype="&xsd;integer">1</ns1:isSupportedForeignCitizens>
+        <ns1:firstName>STELA</ns1:firstName>
+        <ns1:phoneNo>0742194676</ns1:phoneNo>
+        <ns1:schedule>{&apos;Mon&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}, &apos;Tue&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 18}, &apos;Wed&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 16}, &apos;Thu&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 16}, &apos;Fri&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 18}, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 16}}</ns1:schedule>
+        <ns1:lastName>BADARAU</ns1:lastName>
+        <ns1:address rdf:resource="http://schema.org/address/6"/>
+        <notis2:hasServices rdf:resource="&notis2;Antecontracte_de_vanzare-cumparare"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_comodat_sau_inchiriere"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_ipoteca_imobiliara"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_partaj_sau_dezmembrare_sau_alipire"/>
+        <notis2:hasServices rdf:resource="&notis2;Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere"/>
+        <notis2:hasServices rdf:resource="&notis2;Declaratii_sau_procuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Legalizari_de_copii_ale_unor_inscrisuri"/>
+        <notis2:hasServices rdf:resource="&notis2;Testamente"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/Testamente -->
+
+    <owl:NamedIndividual rdf:about="&notis2;Testamente">
+        <rdf:type rdf:resource="&notis2;notary-type-of-service"/>
+        <notis2:needs rdf:resource="&notis2;Acte_de_proprietate"/>
+        <notis2:needs rdf:resource="&notis2;Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/notis/notaryPerson -->
+
+    <owl:NamedIndividual rdf:about="&notis2;notaryPerson">
+        <rdf:type rdf:resource="&ns1;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.merriam-webster.com/dictionary/translator -->
+
+    <owl:NamedIndividual rdf:about="https://www.merriam-webster.com/dictionary/translator">
+        <rdf:type rdf:resource="&ns1;Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://schema.org/address/4">
+        <ns1:street rdf:datatype="&xsd;double">nan</ns1:street>
+        <ns1:coordinates>{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</ns1:coordinates>
+        <ns1:city>IASI</ns1:city>
+        <ns1:locality>TANSA</ns1:locality>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/tr2">
+        <ns1:courtOfAppeal>SUCEAVA</ns1:courtOfAppeal>
+        <ns1:city>SUCEAVA</ns1:city>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/tr1">
+        <ns1:courtOfAppeal>BACĂU</ns1:courtOfAppeal>
+        <ns1:city>BACAU</ns1:city>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/3">
+        <ns1:street>SAT DANCU, NR. 11 A</ns1:street>
+        <ns1:city>IASI</ns1:city>
+        <ns1:locality>HOLBOCA</ns1:locality>
+        <ns1:coordinates>{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</ns1:coordinates>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/tr4">
+        <ns1:city>IASI</ns1:city>
+        <ns1:courtOfAppeal>IAŞI</ns1:courtOfAppeal>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/6">
+        <ns1:city>IASI</ns1:city>
+        <ns1:locality> IASI</ns1:locality>
+        <ns1:coordinates>{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</ns1:coordinates>
+        <ns1:street>STR. A PANU, BL. H1, PARTER</ns1:street>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/tr3">
+        <ns1:city>BUCURESTI</ns1:city>
+        <ns1:courtOfAppeal>BUCUREŞTI</ns1:courtOfAppeal>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/5">
+        <ns1:city>IASI</ns1:city>
+        <ns1:coordinates>{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</ns1:coordinates>
+        <ns1:street>ŞTEFAN CEL MARE ŞI SFÂNT, NR. 3, PARTER</ns1:street>
+        <ns1:locality>IAŞI</ns1:locality>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/0">
+        <ns1:street rdf:datatype="&xsd;double">nan</ns1:street>
+        <ns1:city>IASI</ns1:city>
+        <ns1:locality>BIVOLARI</ns1:locality>
+        <ns1:coordinates>{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</ns1:coordinates>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/tr0">
+        <ns1:courtOfAppeal>PLOIEŞTI</ns1:courtOfAppeal>
+        <ns1:city>BUZAU</ns1:city>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/2">
+        <ns1:street rdf:datatype="&xsd;double">nan</ns1:street>
+        <ns1:locality>CIOHORANI</ns1:locality>
+        <ns1:coordinates>{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</ns1:coordinates>
+        <ns1:city>IASI</ns1:city>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/1">
+        <ns1:street rdf:datatype="&xsd;double">nan</ns1:street>
+        <ns1:city>IASI</ns1:city>
+        <ns1:coordinates>{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</ns1:coordinates>
+        <ns1:locality>BIVOLARI</ns1:locality>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/tr9">
+        <ns1:courtOfAppeal>PLOIEŞTI</ns1:courtOfAppeal>
+        <ns1:city>PRAHOVA</ns1:city>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/8">
+        <ns1:street rdf:datatype="&xsd;double">nan</ns1:street>
+        <ns1:city>IASI</ns1:city>
+        <ns1:coordinates>{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</ns1:coordinates>
+        <ns1:locality>IAŞI</ns1:locality>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/tr6">
+        <ns1:city>BUCURESTI</ns1:city>
+        <ns1:courtOfAppeal>BUCUREŞTI</ns1:courtOfAppeal>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/tr5">
+        <ns1:city>NEAMT</ns1:city>
+        <ns1:courtOfAppeal>BACĂU</ns1:courtOfAppeal>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/7">
+        <ns1:street rdf:datatype="&xsd;double">nan</ns1:street>
+        <ns1:locality>ŢIBĂNEŞTI</ns1:locality>
+        <ns1:city>IASI</ns1:city>
+        <ns1:coordinates>{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</ns1:coordinates>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/tr8">
+        <ns1:courtOfAppeal>GALAŢI</ns1:courtOfAppeal>
+        <ns1:city>GALATI</ns1:city>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/tr7">
+        <ns1:city>GALATI</ns1:city>
+        <ns1:courtOfAppeal>GALAŢI</ns1:courtOfAppeal>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address/9">
+        <ns1:city>IASI</ns1:city>
+        <ns1:street>STR. NICOLINA NR. 11, BL. A5, SC. B PARTER</ns1:street>
+        <ns1:locality>IASI</ns1:locality>
+        <ns1:coordinates>{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</ns1:coordinates>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
