@@ -1,0 +1,1030 @@
+[
+    {
+        "isSupportedForeignCitizens": true,
+        "services": [
+            {
+                "serviceName": "Contracte_de_comodat_sau_inchiriere",
+                "minPrice": 26.69,
+                "maxPrice": 77.19,
+                "necessaryPapers": [
+                    "Acte_de_proprietate"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_ipoteca_imobiliara",
+                "minPrice": 231.55,
+                "maxPrice": 282.05,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_partaj_sau_dezmembrare_sau_alipire",
+                "minPrice": 234.67,
+                "maxPrice": 285.17,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_de_urbanism",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Legalizari_de_copii_ale_unor_inscrisuri",
+                "minPrice": 228.18,
+                "maxPrice": 278.68,
+                "necessaryPapers": [
+                    "Act_pe_care_solicitati_legalizarea_semnaturii"
+                ]
+            }
+        ],
+        "personName": "CLAUDIA AVASILOAE",
+        "phoneNumber": "0742245962",
+        "schedule": {
+            "mon": {
+                "startH": 10,
+                "endH": 16,
+                "specialHours": null
+            },
+            "tue": {
+                "startH": 11,
+                "endH": 19,
+                "specialHours": null
+            },
+            "wed": {
+                "startH": 8,
+                "endH": 16,
+                "specialHours": null
+            },
+            "thu": {
+                "startH": 10,
+                "endH": 19,
+                "specialHours": null
+            },
+            "fri": {
+                "startH": 11,
+                "endH": 17,
+                "specialHours": null
+            },
+            "sat": {
+                "startH": 8,
+                "endH": 17,
+                "specialHours": null
+            },
+            "sun": {
+                "startH": 9,
+                "endH": 16,
+                "specialHours": null
+            }
+        },
+        "address": {
+            "city": "IASI",
+            "locality": "TANSA",
+            "lat": "47.12995076",
+            "long": "27.65790939",
+            "street": "XMLSchema#double",
+            "courtOfAppeal": null
+        }
+    },
+    {
+        "isSupportedForeignCitizens": true,
+        "services": [
+            {
+                "serviceName": "Contracte_de_comodat_sau_inchiriere",
+                "minPrice": 64.91,
+                "maxPrice": 115.41,
+                "necessaryPapers": [
+                    "Acte_de_proprietate"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_ipoteca_imobiliara",
+                "minPrice": 54.29,
+                "maxPrice": 104.79,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_partaj_sau_dezmembrare_sau_alipire",
+                "minPrice": 181.78,
+                "maxPrice": 232.28,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_de_urbanism",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Legalizari_de_copii_ale_unor_inscrisuri",
+                "minPrice": 32.23,
+                "maxPrice": 82.73,
+                "necessaryPapers": [
+                    "Act_pe_care_solicitati_legalizarea_semnaturii"
+                ]
+            },
+            {
+                "serviceName": "Procura_succesorala",
+                "minPrice": 51.18,
+                "maxPrice": 101.68,
+                "necessaryPapers": [
+                    "Act_testament",
+                    "Certificat_de_casatorie",
+                    "Certificat_de_deces"
+                ]
+            },
+            {
+                "serviceName": "Testamente",
+                "minPrice": 283.17,
+                "maxPrice": 333.67,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul"
+                ]
+            }
+        ],
+        "personName": "DANIELA BADARAU",
+        "phoneNumber": "0744437114",
+        "schedule": {
+            "mon": {
+                "startH": 12,
+                "endH": 17,
+                "specialHours": null
+            },
+            "tue": {
+                "startH": 9,
+                "endH": 18,
+                "specialHours": null
+            },
+            "wed": {
+                "startH": 11,
+                "endH": 18,
+                "specialHours": null
+            },
+            "thu": {
+                "startH": 9,
+                "endH": 18,
+                "specialHours": null
+            },
+            "fri": {
+                "startH": 11,
+                "endH": 15,
+                "specialHours": null
+            },
+            "sat": {
+                "startH": null,
+                "endH": null,
+                "specialHours": "CLOSE"
+            },
+            "sun": {
+                "startH": 10,
+                "endH": 16,
+                "specialHours": null
+            }
+        },
+        "address": {
+            "city": "IASI",
+            "locality": "IAŞI",
+            "lat": "47.12995076",
+            "long": "27.65790939",
+            "street": "ŞTEFAN CEL MARE ŞI SFÂNT, NR. 3, PARTER",
+            "courtOfAppeal": null
+        }
+    },
+    {
+        "isSupportedForeignCitizens": true,
+        "services": [
+            {
+                "serviceName": "Contracte_de_comodat_sau_inchiriere",
+                "minPrice": 260.44,
+                "maxPrice": 310.94,
+                "necessaryPapers": [
+                    "Acte_de_proprietate"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_ipoteca_imobiliara",
+                "minPrice": 360.59,
+                "maxPrice": 411.09,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_partaj_sau_dezmembrare_sau_alipire",
+                "minPrice": 294.23,
+                "maxPrice": 344.73,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_de_urbanism",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere",
+                "minPrice": 359.99,
+                "maxPrice": 410.49,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Declaratii_sau_procuri",
+                "minPrice": 113.13,
+                "maxPrice": 163.63,
+                "necessaryPapers": [
+                    "Inscrisuri_in_functie_de_specificul_declaratiei_sau_procurii"
+                ]
+            },
+            {
+                "serviceName": "Legalizari_de_copii_ale_unor_inscrisuri",
+                "minPrice": 184.99,
+                "maxPrice": 235.49,
+                "necessaryPapers": [
+                    "Act_pe_care_solicitati_legalizarea_semnaturii"
+                ]
+            },
+            {
+                "serviceName": "Procura_succesorala",
+                "minPrice": 335.08,
+                "maxPrice": 385.58,
+                "necessaryPapers": [
+                    "Act_testament",
+                    "Certificat_de_casatorie",
+                    "Certificat_de_deces"
+                ]
+            },
+            {
+                "serviceName": "Testamente",
+                "minPrice": 242.01,
+                "maxPrice": 292.51,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul"
+                ]
+            }
+        ],
+        "personName": "GABRIELA ANTON",
+        "phoneNumber": "0741384595",
+        "schedule": {
+            "mon": {
+                "startH": 12,
+                "endH": 16,
+                "specialHours": null
+            },
+            "tue": {
+                "startH": 8,
+                "endH": 16,
+                "specialHours": null
+            },
+            "wed": {
+                "startH": 10,
+                "endH": 15,
+                "specialHours": null
+            },
+            "thu": {
+                "startH": 10,
+                "endH": 19,
+                "specialHours": null
+            },
+            "fri": {
+                "startH": 8,
+                "endH": 18,
+                "specialHours": null
+            },
+            "sat": {
+                "startH": null,
+                "endH": null,
+                "specialHours": "CLOSE"
+            },
+            "sun": {
+                "startH": null,
+                "endH": null,
+                "specialHours": "CLOSE"
+            }
+        },
+        "address": {
+            "city": "IASI",
+            "locality": "HOLBOCA",
+            "lat": "47.12995076",
+            "long": "27.65790939",
+            "street": "SAT DANCU, NR. 11 A",
+            "courtOfAppeal": null
+        }
+    },
+    {
+        "isSupportedForeignCitizens": false,
+        "services": [
+            {
+                "serviceName": "Contracte_de_comodat_sau_inchiriere",
+                "minPrice": 240.39,
+                "maxPrice": 290.89,
+                "necessaryPapers": [
+                    "Acte_de_proprietate"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere",
+                "minPrice": 212.59,
+                "maxPrice": 263.09,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Declaratii_sau_procuri",
+                "minPrice": 83.13,
+                "maxPrice": 133.63,
+                "necessaryPapers": [
+                    "Inscrisuri_in_functie_de_specificul_declaratiei_sau_procurii"
+                ]
+            },
+            {
+                "serviceName": "Legalizari_de_copii_ale_unor_inscrisuri",
+                "minPrice": 12.56,
+                "maxPrice": 63.06,
+                "necessaryPapers": [
+                    "Act_pe_care_solicitati_legalizarea_semnaturii"
+                ]
+            },
+            {
+                "serviceName": "Procura_succesorala",
+                "minPrice": 71.36,
+                "maxPrice": 121.86,
+                "necessaryPapers": [
+                    "Act_testament",
+                    "Certificat_de_casatorie",
+                    "Certificat_de_deces"
+                ]
+            },
+            {
+                "serviceName": "Testamente",
+                "minPrice": 98.93,
+                "maxPrice": 149.43,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul"
+                ]
+            }
+        ],
+        "personName": "IOANA ANGELA BELDEANU",
+        "phoneNumber": "0745936966",
+        "schedule": {
+            "mon": {
+                "startH": 8,
+                "endH": 15,
+                "specialHours": null
+            },
+            "tue": {
+                "startH": 9,
+                "endH": 15,
+                "specialHours": null
+            },
+            "wed": {
+                "startH": 11,
+                "endH": 16,
+                "specialHours": null
+            },
+            "thu": {
+                "startH": 8,
+                "endH": 17,
+                "specialHours": null
+            },
+            "fri": {
+                "startH": 9,
+                "endH": 17,
+                "specialHours": null
+            },
+            "sat": {
+                "startH": 10,
+                "endH": 19,
+                "specialHours": null
+            },
+            "sun": {
+                "startH": null,
+                "endH": null,
+                "specialHours": "CLOSE"
+            }
+        },
+        "address": {
+            "city": "IASI",
+            "locality": "IASI",
+            "lat": "47.12995076",
+            "long": "27.65790939",
+            "street": "STR. NICOLINA NR. 11, BL. A5, SC. B PARTER",
+            "courtOfAppeal": null
+        }
+    },
+    {
+        "isSupportedForeignCitizens": false,
+        "services": [
+            {
+                "serviceName": "Contracte_de_comodat_sau_inchiriere",
+                "minPrice": 178.41,
+                "maxPrice": 228.91,
+                "necessaryPapers": [
+                    "Acte_de_proprietate"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_ipoteca_imobiliara",
+                "minPrice": 103.12,
+                "maxPrice": 153.62,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere",
+                "minPrice": 369.21,
+                "maxPrice": 419.71,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Declaratii_sau_procuri",
+                "minPrice": 313.38,
+                "maxPrice": 363.88,
+                "necessaryPapers": [
+                    "Inscrisuri_in_functie_de_specificul_declaratiei_sau_procurii"
+                ]
+            },
+            {
+                "serviceName": "Legalizari_de_copii_ale_unor_inscrisuri",
+                "minPrice": 177.57,
+                "maxPrice": 228.07,
+                "necessaryPapers": [
+                    "Act_pe_care_solicitati_legalizarea_semnaturii"
+                ]
+            },
+            {
+                "serviceName": "Testamente",
+                "minPrice": 389.62,
+                "maxPrice": 440.12,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul"
+                ]
+            }
+        ],
+        "personName": "MARIANA OTILIA BALAN",
+        "phoneNumber": "0743021581",
+        "schedule": {
+            "mon": {
+                "startH": 8,
+                "endH": 17,
+                "specialHours": null
+            },
+            "tue": {
+                "startH": 11,
+                "endH": 18,
+                "specialHours": null
+            },
+            "wed": {
+                "startH": 10,
+                "endH": 19,
+                "specialHours": null
+            },
+            "thu": {
+                "startH": 9,
+                "endH": 15,
+                "specialHours": null
+            },
+            "fri": {
+                "startH": null,
+                "endH": null,
+                "specialHours": "CLOSE"
+            },
+            "sat": {
+                "startH": null,
+                "endH": null,
+                "specialHours": "CLOSE"
+            },
+            "sun": {
+                "startH": null,
+                "endH": null,
+                "specialHours": "CLOSE"
+            }
+        },
+        "address": {
+            "city": "IASI",
+            "locality": "ŢIBĂNEŞTI",
+            "lat": "47.12995076",
+            "long": "27.65790939",
+            "street": "XMLSchema#double",
+            "courtOfAppeal": null
+        }
+    },
+    {
+        "isSupportedForeignCitizens": false,
+        "services": [
+            {
+                "serviceName": "Contracte_de_comodat_sau_inchiriere",
+                "minPrice": 388.75,
+                "maxPrice": 439.25,
+                "necessaryPapers": [
+                    "Acte_de_proprietate"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_ipoteca_imobiliara",
+                "minPrice": 98.15,
+                "maxPrice": 148.65,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_partaj_sau_dezmembrare_sau_alipire",
+                "minPrice": 372.28,
+                "maxPrice": 422.78,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_de_urbanism",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere",
+                "minPrice": 88.92,
+                "maxPrice": 139.42,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Declaratii_sau_procuri",
+                "minPrice": 148.77,
+                "maxPrice": 199.27,
+                "necessaryPapers": [
+                    "Inscrisuri_in_functie_de_specificul_declaratiei_sau_procurii"
+                ]
+            },
+            {
+                "serviceName": "Legalizari_de_copii_ale_unor_inscrisuri",
+                "minPrice": 349.34,
+                "maxPrice": 399.84,
+                "necessaryPapers": [
+                    "Act_pe_care_solicitati_legalizarea_semnaturii"
+                ]
+            },
+            {
+                "serviceName": "Testamente",
+                "minPrice": 140.99,
+                "maxPrice": 191.49,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul"
+                ]
+            }
+        ],
+        "personName": "RALUCA ANDRIESCU",
+        "phoneNumber": "0742752791",
+        "schedule": {
+            "mon": {
+                "startH": 9,
+                "endH": 16,
+                "specialHours": null
+            },
+            "tue": {
+                "startH": 12,
+                "endH": 19,
+                "specialHours": null
+            },
+            "wed": {
+                "startH": 10,
+                "endH": 17,
+                "specialHours": null
+            },
+            "thu": {
+                "startH": 10,
+                "endH": 19,
+                "specialHours": null
+            },
+            "fri": {
+                "startH": 8,
+                "endH": 19,
+                "specialHours": null
+            },
+            "sat": {
+                "startH": null,
+                "endH": null,
+                "specialHours": "CLOSE"
+            },
+            "sun": {
+                "startH": 12,
+                "endH": 17,
+                "specialHours": null
+            }
+        },
+        "address": {
+            "city": "IASI",
+            "locality": "BIVOLARI",
+            "lat": "47.12995076",
+            "long": "27.65790939",
+            "street": "XMLSchema#double",
+            "courtOfAppeal": null
+        }
+    },
+    {
+        "isSupportedForeignCitizens": false,
+        "services": [
+            {
+                "serviceName": "Contracte_de_comodat_sau_inchiriere",
+                "minPrice": 173.26,
+                "maxPrice": 223.76,
+                "necessaryPapers": [
+                    "Acte_de_proprietate"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_ipoteca_imobiliara",
+                "minPrice": 56.14,
+                "maxPrice": 106.64,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_partaj_sau_dezmembrare_sau_alipire",
+                "minPrice": 223.87,
+                "maxPrice": 274.37,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_de_urbanism",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere",
+                "minPrice": 170.64,
+                "maxPrice": 221.14,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Declaratii_sau_procuri",
+                "minPrice": 155.47,
+                "maxPrice": 205.97,
+                "necessaryPapers": [
+                    "Inscrisuri_in_functie_de_specificul_declaratiei_sau_procurii"
+                ]
+            },
+            {
+                "serviceName": "Legalizari_de_copii_ale_unor_inscrisuri",
+                "minPrice": 263.03,
+                "maxPrice": 313.53,
+                "necessaryPapers": [
+                    "Act_pe_care_solicitati_legalizarea_semnaturii"
+                ]
+            },
+            {
+                "serviceName": "Testamente",
+                "minPrice": 203.55,
+                "maxPrice": 254.05,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul"
+                ]
+            }
+        ],
+        "personName": "RAZVAN ANTOHIE",
+        "phoneNumber": "0743195717",
+        "schedule": {
+            "mon": {
+                "startH": 9,
+                "endH": 16,
+                "specialHours": null
+            },
+            "tue": {
+                "startH": 11,
+                "endH": 17,
+                "specialHours": null
+            },
+            "wed": {
+                "startH": 12,
+                "endH": 19,
+                "specialHours": null
+            },
+            "thu": {
+                "startH": 12,
+                "endH": 15,
+                "specialHours": null
+            },
+            "fri": {
+                "startH": null,
+                "endH": null,
+                "specialHours": "CLOSE"
+            },
+            "sat": {
+                "startH": null,
+                "endH": null,
+                "specialHours": "CLOSE"
+            },
+            "sun": {
+                "startH": 10,
+                "endH": 19,
+                "specialHours": null
+            }
+        },
+        "address": {
+            "city": "IASI",
+            "locality": "CIOHORANI",
+            "lat": "47.12995076",
+            "long": "27.65790939",
+            "street": "XMLSchema#double",
+            "courtOfAppeal": null
+        }
+    },
+    {
+        "isSupportedForeignCitizens": false,
+        "services": [
+            {
+                "serviceName": "Antecontracte_de_vanzare-cumparare",
+                "minPrice": 342.77,
+                "maxPrice": 393.27,
+                "necessaryPapers": [
+                    "Acte_de_proprietate"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_comodat_sau_inchiriere",
+                "minPrice": 348.61,
+                "maxPrice": 399.11,
+                "necessaryPapers": [
+                    "Acte_de_proprietate"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_ipoteca_imobiliara",
+                "minPrice": 388.79,
+                "maxPrice": 439.29,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_partaj_sau_dezmembrare_sau_alipire",
+                "minPrice": 245.48,
+                "maxPrice": 295.98,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_de_urbanism",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere",
+                "minPrice": 230.63,
+                "maxPrice": 281.13,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Declaratii_sau_procuri",
+                "minPrice": 89.13,
+                "maxPrice": 139.63,
+                "necessaryPapers": [
+                    "Inscrisuri_in_functie_de_specificul_declaratiei_sau_procurii"
+                ]
+            },
+            {
+                "serviceName": "Legalizari_de_copii_ale_unor_inscrisuri",
+                "minPrice": 60.55,
+                "maxPrice": 111.05,
+                "necessaryPapers": [
+                    "Act_pe_care_solicitati_legalizarea_semnaturii"
+                ]
+            },
+            {
+                "serviceName": "Testamente",
+                "minPrice": 339.85,
+                "maxPrice": 390.35,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul"
+                ]
+            }
+        ],
+        "personName": "SIMONA-STEFANIA BALAN",
+        "phoneNumber": "0743662338",
+        "schedule": {
+            "mon": {
+                "startH": 11,
+                "endH": 18,
+                "specialHours": null
+            },
+            "tue": {
+                "startH": 12,
+                "endH": 15,
+                "specialHours": null
+            },
+            "wed": {
+                "startH": 12,
+                "endH": 19,
+                "specialHours": null
+            },
+            "thu": {
+                "startH": 11,
+                "endH": 18,
+                "specialHours": null
+            },
+            "fri": {
+                "startH": null,
+                "endH": null,
+                "specialHours": "CLOSE"
+            },
+            "sat": {
+                "startH": null,
+                "endH": null,
+                "specialHours": "CLOSE"
+            },
+            "sun": {
+                "startH": 8,
+                "endH": 15,
+                "specialHours": null
+            }
+        },
+        "address": {
+            "city": "IASI",
+            "locality": "IAŞI",
+            "lat": "47.12995076",
+            "long": "27.65790939",
+            "street": "XMLSchema#double",
+            "courtOfAppeal": null
+        }
+    },
+    {
+        "isSupportedForeignCitizens": true,
+        "services": [
+            {
+                "serviceName": "Antecontracte_de_vanzare-cumparare",
+                "minPrice": 228.8,
+                "maxPrice": 279.3,
+                "necessaryPapers": [
+                    "Acte_de_proprietate"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_comodat_sau_inchiriere",
+                "minPrice": 267.88,
+                "maxPrice": 318.38,
+                "necessaryPapers": [
+                    "Acte_de_proprietate"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_ipoteca_imobiliara",
+                "minPrice": 302.34,
+                "maxPrice": 352.84,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_partaj_sau_dezmembrare_sau_alipire",
+                "minPrice": 238.69,
+                "maxPrice": 289.19,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_de_urbanism",
+                    "Certificat_fiscal",
+                    "Documentatie_cadastrala",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Contracte_de_vanzare-cumparare_sau_donatie_sau_schimb_sau_intretinere",
+                "minPrice": 298.5,
+                "maxPrice": 349.0,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Certificat_fiscal",
+                    "Extras_de_carte_funciara"
+                ]
+            },
+            {
+                "serviceName": "Declaratii_sau_procuri",
+                "minPrice": 275.29,
+                "maxPrice": 325.79,
+                "necessaryPapers": [
+                    "Inscrisuri_in_functie_de_specificul_declaratiei_sau_procurii"
+                ]
+            },
+            {
+                "serviceName": "Legalizari_de_copii_ale_unor_inscrisuri",
+                "minPrice": 45.47,
+                "maxPrice": 95.97,
+                "necessaryPapers": [
+                    "Act_pe_care_solicitati_legalizarea_semnaturii"
+                ]
+            },
+            {
+                "serviceName": "Testamente",
+                "minPrice": 357.06,
+                "maxPrice": 407.56,
+                "necessaryPapers": [
+                    "Acte_de_proprietate",
+                    "Copie_a_actului_de_identitate_a_persoanei_in_favoarea_careia_se_lasa_testamentul"
+                ]
+            }
+        ],
+        "personName": "STELA BADARAU",
+        "phoneNumber": "0742194676",
+        "schedule": {
+            "mon": {
+                "startH": 9,
+                "endH": 16,
+                "specialHours": null
+            },
+            "tue": {
+                "startH": 9,
+                "endH": 18,
+                "specialHours": null
+            },
+            "wed": {
+                "startH": 12,
+                "endH": 16,
+                "specialHours": null
+            },
+            "thu": {
+                "startH": 12,
+                "endH": 16,
+                "specialHours": null
+            },
+            "fri": {
+                "startH": 9,
+                "endH": 18,
+                "specialHours": null
+            },
+            "sat": {
+                "startH": null,
+                "endH": null,
+                "specialHours": "CLOSE"
+            },
+            "sun": {
+                "startH": 8,
+                "endH": 16,
+                "specialHours": null
+            }
+        },
+        "address": {
+            "city": "IASI",
+            "locality": " IASI",
+            "lat": "47.12995076",
+            "long": "27.65790939",
+            "street": "STR. A PANU, BL. H1, PARTER",
+            "courtOfAppeal": null
+        }
+    }
+]
