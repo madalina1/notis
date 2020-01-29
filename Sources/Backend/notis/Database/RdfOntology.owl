@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:ns1="http://xmlns.com/foaf/0.1/"
+  xmlns:notis2="https://www.merriam-webster.com/dictionary/notary%20"
+  xmlns:ns3="https://www.merriam-webster.com/dictionary/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <ns3:translator rdf:about="http://example.org/people/Adina_Mihaela_Ababei">
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/IAŞI">
+        <ns1:county>IASI</ns1:county>
+        <ns1:city>IAŞI</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:phoneNo>0429592633</ns1:phoneNo>
+    <ns1:languages>['Franceză']</ns1:languages>
+    <ns1:firstName>Adina Mihaela</ns1:firstName>
+    <ns1:lastName>Ababei</ns1:lastName>
+  </ns3:translator>
+
+  <notis2:public rdf:about="http://example.org/people/ALEXANDRA_ADAM-HOTOIU">
+    <ns1:phoneNo>0764680047</ns1:phoneNo>
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/SIMERIA">
+        <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
+        <ns1:city>SIMERIA</ns1:city>
+        <ns1:county>HUNEDOARA</ns1:county>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:firstName>ALEXANDRA</ns1:firstName>
+    <ns1:lastName>ADAM-HOTOIU</ns1:lastName>
+  </notis2:public>
+
+  <ns3:translator rdf:about="http://example.org/people/Alina_Aanei">
+    <ns1:firstName>Alina</ns1:firstName>
+    <ns1:lastName>Aanei</ns1:lastName>
+    <ns1:phoneNo>0105397175</ns1:phoneNo>
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/BACĂU">
+        <ns1:city>BACĂU</ns1:city>
+        <ns1:county>BACAU</ns1:county>
+        <ns1:county>NEAMT</ns1:county>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:languages>['Engleză', 'Franceză']</ns1:languages>
+  </ns3:translator>
+  <ns3:translator rdf:about="http://example.org/people/Andreea-Ramona_Aanei">
+    <ns1:languages>['Italiană']</ns1:languages>
+    <ns1:phoneNo>0874364721</ns1:phoneNo>
+    <ns1:lastName>Aanei</ns1:lastName>
+    <ns1:firstName>Andreea-Ramona</ns1:firstName>
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/SUCEAVA">
+        <ns1:county>SUCEAVA</ns1:county>
+        <ns1:city>SUCEAVA</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+  </ns3:translator>
+  <notis2:public rdf:about="http://example.org/people/ADRIAN_ACHIM">
+    <ns1:firstName>ADRIAN</ns1:firstName>
+    <ns1:phoneNo>0824299984</ns1:phoneNo>
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/PITEŞTI">
+        <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
+        <ns1:county>ARGEŞ</ns1:county>
+        <ns1:city>PITEŞTI</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:lastName>ACHIM</ns1:lastName>
+  </notis2:public>
+  <ns3:translator rdf:about="http://example.org/people/Mihaela_Aanei">
+    <ns1:languages>['Engleză']</ns1:languages>
+    <ns1:firstName>Mihaela</ns1:firstName>
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/BUCUREŞTI">
+        <ns1:city>BUCUREŞTI</ns1:city>
+        <ns1:county>BUCURESTI</ns1:county>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:phoneNo>0721921461</ns1:phoneNo>
+    <ns1:lastName>Aanei</ns1:lastName>
+  </ns3:translator>
+  <ns3:translator rdf:about="http://example.org/people/Alina-Nicoleta_Aamoum">
+    <ns1:phoneNo>2126679528</ns1:phoneNo>
+    <ns1:firstName>Alina-Nicoleta</ns1:firstName>
+    <ns1:languages>['Franceză', 'Rusă']</ns1:languages>
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/PLOIEŞTI">
+        <ns1:county>BUZAU</ns1:county>
+        <ns1:county>PRAHOVA</ns1:county>
+        <ns1:city>PLOIEŞTI</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:lastName>Aamoum</ns1:lastName>
+  </ns3:translator>
+  <ns3:translator rdf:about="http://example.org/people/Alina-Mihaela_Ababei">
+    <ns1:phoneNo>0597728007</ns1:phoneNo>
+    <ns1:address rdf:resource="https://address.org/id/BACĂU"/>
+    <ns1:lastName>Ababei</ns1:lastName>
+    <ns1:languages>['Engleză', 'Franceză']</ns1:languages>
+    <ns1:firstName>Alina-Mihaela</ns1:firstName>
+  </ns3:translator>
+  <ns3:translator rdf:about="http://example.org/people/Oana-Mihaela_Ababei">
+    <ns1:firstName>Oana-Mihaela</ns1:firstName>
+    <ns1:lastName>Ababei</ns1:lastName>
+    <ns1:languages>['Franceză']</ns1:languages>
+    <ns1:address rdf:resource="https://address.org/id/PLOIEŞTI"/>
+    <ns1:phoneNo>0774925121</ns1:phoneNo>
+  </ns3:translator>
+  <ns3:translator rdf:about="http://example.org/people/Angela-Ilinca_Ababei">
+    <ns1:address rdf:resource="https://address.org/id/BUCUREŞTI"/>
+    <ns1:lastName>Ababei</ns1:lastName>
+    <ns1:phoneNo>0322958884</ns1:phoneNo>
+    <ns1:languages>['Engleză', 'Franceză']</ns1:languages>
+    <ns1:firstName>Angela-Ilinca</ns1:firstName>
+  </ns3:translator>
+  <notis2:public rdf:about="http://example.org/people/FLORENTINA_LOREDANA_ACHIM">
+    <ns1:phoneNo>0325871809</ns1:phoneNo>
+    <ns1:firstName>FLORENTINA LOREDANA</ns1:firstName>
+    <ns1:lastName>ACHIM</ns1:lastName>
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/POPEŞTI-LEORDENI">
+        <ns1:city>POPEŞTI-LEORDENI</ns1:city>
+        <ns1:county>ILFOV</ns1:county>
+        <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
+      </rdf:Description>
+    </ns1:address>
+  </notis2:public>
+  <notis2:public rdf:about="http://example.org/people/GHEORGHE_ABABEI">
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/BUHUŞI">
+        <ns1:county>BACĂU</ns1:county>
+        <ns1:city>BUHUŞI</ns1:city>
+        <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:firstName>GHEORGHE</ns1:firstName>
+    <ns1:phoneNo>0880325331</ns1:phoneNo>
+    <ns1:lastName>ABABEI</ns1:lastName>
+  </notis2:public>
+  <ns3:translator rdf:about="http://example.org/people/Carmen_Beatrice_Ababei">
+    <ns1:phoneNo>0965662806</ns1:phoneNo>
+    <ns1:lastName>Ababei</ns1:lastName>
+    <ns1:firstName>Carmen Beatrice</ns1:firstName>
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/GALAŢI">
+        <ns1:county>GALATI</ns1:county>
+        <ns1:city>GALAŢI</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:languages>['Franceză']</ns1:languages>
+  </ns3:translator>
+  <notis2:public rdf:about="http://example.org/people/CORNELIA_AGACHI">
+    <ns1:lastName>AGACHI</ns1:lastName>
+    <ns1:phoneNo>0536576724</ns1:phoneNo>
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/BOTOŞANI">
+        <ns1:street>CALEA NAŢIONALĂ, Nr.103A</ns1:street>
+        <ns1:city>BOTOŞANI</ns1:city>
+        <ns1:county>BOTOŞANI</ns1:county>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:firstName>CORNELIA</ns1:firstName>
+  </notis2:public>
+  <notis2:public rdf:about="http://example.org/people/RADU_MIHAIL_ABABEI">
+    <ns1:lastName>ABABEI</ns1:lastName>
+    <ns1:phoneNo>0994508301</ns1:phoneNo>
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/BACAU">
+        <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
+        <ns1:city>BACAU</ns1:city>
+        <ns1:county>BACĂU</ns1:county>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:firstName>RADU MIHAIL</ns1:firstName>
+  </notis2:public>
+  <notis2:public rdf:about="http://example.org/people/DUMITRIŢA_GABRIELA_AGACHE">
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/VATRA_DORNEI">
+        <ns1:street>STR. VICILICILOR NR. 3, PARTER</ns1:street>
+        <ns1:county>SUCEAVA</ns1:county>
+        <ns1:city>VATRA DORNEI</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:firstName>DUMITRIŢA GABRIELA</ns1:firstName>
+    <ns1:lastName>AGACHE</ns1:lastName>
+    <ns1:phoneNo>0449902802</ns1:phoneNo>
+  </notis2:public>
+  <notis2:public rdf:about="http://example.org/people/FELIX_ADORIAN">
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/TG_MUREŞ">
+        <ns1:city>TG MUREŞ</ns1:city>
+        <ns1:county>MUREŞ</ns1:county>
+        <ns1:street>STR. LIVIU REBREANU NR. 1, AP. II</ns1:street>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:lastName>ADORIAN</ns1:lastName>
+    <ns1:phoneNo>0499432749</ns1:phoneNo>
+    <ns1:firstName>FELIX</ns1:firstName>
+  </notis2:public>
+  <ns3:translator rdf:about="http://example.org/people/Ioan_Ababei">
+    <ns1:address rdf:resource="https://address.org/id/GALAŢI"/>
+    <ns1:lastName>Ababei</ns1:lastName>
+    <ns1:languages>['Rusă']</ns1:languages>
+    <ns1:firstName>Ioan</ns1:firstName>
+    <ns1:phoneNo>0236460085</ns1:phoneNo>
+  </ns3:translator>
+  <notis2:public rdf:about="http://example.org/people/DAMIRA-IOANA_AGAVRILOAEI">
+    <ns1:lastName>AGAVRILOAEI</ns1:lastName>
+    <ns1:firstName>DAMIRA-IOANA</ns1:firstName>
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/LETCA-NOUĂ">
+        <ns1:street>FĂRĂ SPAŢIU</ns1:street>
+        <ns1:city>LETCA-NOUĂ</ns1:city>
+        <ns1:county>GIURGIU</ns1:county>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:phoneNo>0934231502</ns1:phoneNo>
+  </notis2:public>
+  <notis2:public rdf:about="http://example.org/people/STELIAN_AGACHI">
+    <ns1:firstName>STELIAN</ns1:firstName>
+    <ns1:lastName>AGACHI</ns1:lastName>
+    <ns1:phoneNo>0272093557</ns1:phoneNo>
+    <ns1:address>
+      <rdf:Description rdf:about="https://address.org/id/BOTOSANI">
+        <ns1:street>Calea Nationala, Nr.103A</ns1:street>
+        <ns1:county>BOTOŞANI</ns1:county>
+        <ns1:city>BOTOSANI</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+  </notis2:public>
+  <ns1:Person rdf:about="https://www.merriam-webster.com/dictionary/translator"/>
+  <ns1:Person rdf:about="https://www.merriam-webster.com/dictionary/notary%20public"/>
+</rdf:RDF>

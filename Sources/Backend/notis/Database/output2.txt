@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:ns1="http://xmlns.com/foaf/0.1/"
+  xmlns:ns2="http://www.semanticweb.org/notis/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <ns2:notaryPerson rdf:about="http://www.semanticweb.org/notis/DANIELA_BADARAU">
+    <ns1:isSupportedForeignCitizens rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:isSupportedForeignCitizens>
+    <ns1:schedule>{'Mon': {'startH': 12, 'endH': 17}, 'Tue': {'startH': 9, 'endH': 18}, 'Wed': {'startH': 11, 'endH': 18}, 'Thu': {'startH': 9, 'endH': 18}, 'Fri': {'startH': 11, 'endH': 15}, 'Sat': 'CLOSE', 'Sun': {'startH': 10, 'endH': 16}}</ns1:schedule>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/5">
+        <ns1:street>ŞTEFAN CEL MARE ŞI SFÂNT, NR. 3, PARTER</ns1:street>
+        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:locality>IAŞI</ns1:locality>
+        <ns1:city>IASI</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:firstName>DANIELA</ns1:firstName>
+    <ns1:lastName>BADARAU</ns1:lastName>
+    <ns1:phoneNo>0744437114</ns1:phoneNo>
+  </ns2:notaryPerson>
+  <ns2:notaryPerson rdf:about="http://www.semanticweb.org/notis/RALUCA_ANDRIESCU">
+    <ns1:schedule>{'Mon': {'startH': 12, 'endH': 19}, 'Tue': {'startH': 10, 'endH': 15}, 'Wed': {'startH': 8, 'endH': 15}, 'Thu': {'startH': 8, 'endH': 15}, 'Fri': {'startH': 10, 'endH': 16}, 'Sat': {'startH': 8, 'endH': 17}, 'Sun': 'CLOSE'}</ns1:schedule>
+    <ns1:phoneNo>0749962214</ns1:phoneNo>
+    <ns1:firstName>RALUCA</ns1:firstName>
+    <ns1:lastName>ANDRIESCU</ns1:lastName>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/0">
+        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:locality>BIVOLARI</ns1:locality>
+        <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
+        <ns1:city>IASI</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:phoneNo>0742752791</ns1:phoneNo>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/1">
+        <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
+        <ns1:city>IASI</ns1:city>
+        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:locality>BIVOLARI</ns1:locality>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:schedule>{'Mon': {'startH': 9, 'endH': 16}, 'Tue': {'startH': 12, 'endH': 19}, 'Wed': {'startH': 10, 'endH': 17}, 'Thu': {'startH': 10, 'endH': 19}, 'Fri': {'startH': 8, 'endH': 19}, 'Sat': 'CLOSE', 'Sun': {'startH': 12, 'endH': 17}}</ns1:schedule>
+    <ns1:isSupportedForeignCitizens rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns1:isSupportedForeignCitizens>
+  </ns2:notaryPerson>
+  <ns2:notaryPerson rdf:about="http://www.semanticweb.org/notis/CLAUDIA_AVASILOAE">
+    <ns1:phoneNo>0742245962</ns1:phoneNo>
+    <ns1:firstName>CLAUDIA</ns1:firstName>
+    <ns1:lastName>AVASILOAE</ns1:lastName>
+    <ns1:isSupportedForeignCitizens rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:isSupportedForeignCitizens>
+    <ns1:schedule>{'Mon': {'startH': 10, 'endH': 16}, 'Tue': {'startH': 11, 'endH': 19}, 'Wed': {'startH': 8, 'endH': 16}, 'Thu': {'startH': 10, 'endH': 19}, 'Fri': {'startH': 11, 'endH': 17}, 'Sat': {'startH': 8, 'endH': 17}, 'Sun': {'startH': 9, 'endH': 16}}</ns1:schedule>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/4">
+        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
+        <ns1:city>IASI</ns1:city>
+        <ns1:locality>TANSA</ns1:locality>
+      </rdf:Description>
+    </ns1:address>
+  </ns2:notaryPerson>
+  <ns2:notaryPerson rdf:about="http://www.semanticweb.org/notis/MARIANA_OTILIA_BALAN">
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/7">
+        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
+        <ns1:city>IASI</ns1:city>
+        <ns1:locality>ŢIBĂNEŞTI</ns1:locality>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:firstName>MARIANA OTILIA</ns1:firstName>
+    <ns1:schedule>{'Mon': {'startH': 8, 'endH': 17}, 'Tue': {'startH': 11, 'endH': 18}, 'Wed': {'startH': 10, 'endH': 19}, 'Thu': {'startH': 9, 'endH': 15}, 'Fri': 'CLOSE', 'Sat': 'CLOSE', 'Sun': 'CLOSE'}</ns1:schedule>
+    <ns1:phoneNo>0743021581</ns1:phoneNo>
+    <ns1:lastName>BALAN</ns1:lastName>
+    <ns1:isSupportedForeignCitizens rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns1:isSupportedForeignCitizens>
+  </ns2:notaryPerson>
+  <ns2:notaryPerson rdf:about="http://www.semanticweb.org/notis/SIMONA-STEFANIA_BALAN">
+    <ns1:phoneNo>0743662338</ns1:phoneNo>
+    <ns1:isSupportedForeignCitizens rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns1:isSupportedForeignCitizens>
+    <ns1:firstName>SIMONA-STEFANIA</ns1:firstName>
+    <ns1:schedule>{'Mon': {'startH': 11, 'endH': 18}, 'Tue': {'startH': 12, 'endH': 15}, 'Wed': {'startH': 12, 'endH': 19}, 'Thu': {'startH': 11, 'endH': 18}, 'Fri': 'CLOSE', 'Sat': 'CLOSE', 'Sun': {'startH': 8, 'endH': 15}}</ns1:schedule>
+    <ns1:lastName>BALAN</ns1:lastName>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/8">
+        <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
+        <ns1:city>IASI</ns1:city>
+        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:locality>IAŞI</ns1:locality>
+      </rdf:Description>
+    </ns1:address>
+  </ns2:notaryPerson>
+  <ns2:notaryPerson rdf:about="http://www.semanticweb.org/notis/GABRIELA_ANTON">
+    <ns1:phoneNo>0741384595</ns1:phoneNo>
+    <ns1:firstName>GABRIELA</ns1:firstName>
+    <ns1:schedule>{'Mon': {'startH': 12, 'endH': 16}, 'Tue': {'startH': 8, 'endH': 16}, 'Wed': {'startH': 10, 'endH': 15}, 'Thu': {'startH': 10, 'endH': 19}, 'Fri': {'startH': 8, 'endH': 18}, 'Sat': 'CLOSE', 'Sun': 'CLOSE'}</ns1:schedule>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/3">
+        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:locality>HOLBOCA</ns1:locality>
+        <ns1:street>SAT DANCU, NR. 11 A</ns1:street>
+        <ns1:city>IASI</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:lastName>ANTON</ns1:lastName>
+    <ns1:isSupportedForeignCitizens rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:isSupportedForeignCitizens>
+  </ns2:notaryPerson>
+  <ns2:notaryPerson rdf:about="http://www.semanticweb.org/notis/IOANA_ANGELA_BELDEANU">
+    <ns1:phoneNo>0745936966</ns1:phoneNo>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/9">
+        <ns1:city>IASI</ns1:city>
+        <ns1:locality>IASI</ns1:locality>
+        <ns1:street>STR. NICOLINA NR. 11, BL. A5, SC. B PARTER</ns1:street>
+        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:lastName>BELDEANU</ns1:lastName>
+    <ns1:isSupportedForeignCitizens rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns1:isSupportedForeignCitizens>
+    <ns1:firstName>IOANA ANGELA</ns1:firstName>
+    <ns1:schedule>{'Mon': {'startH': 8, 'endH': 15}, 'Tue': {'startH': 9, 'endH': 15}, 'Wed': {'startH': 11, 'endH': 16}, 'Thu': {'startH': 8, 'endH': 17}, 'Fri': {'startH': 9, 'endH': 17}, 'Sat': {'startH': 10, 'endH': 19}, 'Sun': 'CLOSE'}</ns1:schedule>
+  </ns2:notaryPerson>
+  <ns2:notaryPerson rdf:about="http://www.semanticweb.org/notis/RAZVAN_ANTOHIE">
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/2">
+        <ns1:locality>CIOHORANI</ns1:locality>
+        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
+        <ns1:city>IASI</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:phoneNo>0743195717</ns1:phoneNo>
+    <ns1:schedule>{'Mon': {'startH': 9, 'endH': 16}, 'Tue': {'startH': 11, 'endH': 17}, 'Wed': {'startH': 12, 'endH': 19}, 'Thu': {'startH': 12, 'endH': 15}, 'Fri': 'CLOSE', 'Sat': 'CLOSE', 'Sun': {'startH': 10, 'endH': 19}}</ns1:schedule>
+    <ns1:firstName>RAZVAN</ns1:firstName>
+    <ns1:isSupportedForeignCitizens rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ns1:isSupportedForeignCitizens>
+    <ns1:lastName>ANTOHIE</ns1:lastName>
+  </ns2:notaryPerson>
+  <ns2:notaryPerson rdf:about="http://www.semanticweb.org/notis/STELA_BADARAU">
+    <ns1:schedule>{'Mon': {'startH': 9, 'endH': 16}, 'Tue': {'startH': 9, 'endH': 18}, 'Wed': {'startH': 12, 'endH': 16}, 'Thu': {'startH': 12, 'endH': 16}, 'Fri': {'startH': 9, 'endH': 18}, 'Sat': 'CLOSE', 'Sun': {'startH': 8, 'endH': 16}}</ns1:schedule>
+    <ns1:isSupportedForeignCitizens rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:isSupportedForeignCitizens>
+    <ns1:lastName>BADARAU</ns1:lastName>
+    <ns1:phoneNo>0742194676</ns1:phoneNo>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/6">
+        <ns1:locality> IASI</ns1:locality>
+        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:city>IASI</ns1:city>
+        <ns1:street>STR. A PANU, BL. H1, PARTER</ns1:street>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:firstName>STELA</ns1:firstName>
+  </ns2:notaryPerson>
+  <ns1:Person rdf:about="http://www.semanticweb.org/notis/notaryPerson"/>
+</rdf:RDF>

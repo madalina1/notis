@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:ns1="http://xmlns.com/foaf/0.1/"
+  xmlns:ns2="https://www.merriam-webster.com/dictionary/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <ns2:translator rdf:about="http://www.semanticweb.org/notis/Alina_Aanei">
+    <ns1:lastName>Aanei</ns1:lastName>
+    <ns1:authorisationNr>8733</ns1:authorisationNr>
+    <ns1:firstName>Alina</ns1:firstName>
+    <ns1:schedule>{'L': {'startH': 9, 'endH': 15}, 'M': {'startH': 8, 'endH': 19}, 'Mi': {'startH': 9, 'endH': 18}, 'J': {'startH': 8, 'endH': 18}, 'V': 'CLOSE', 'S': 'CLOSE', 'D': 'CLOSE'}</ns1:schedule>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/tr1">
+        <ns1:courtOfAppeal>BACĂU</ns1:courtOfAppeal>
+        <ns1:city>BACAU</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:languages>['Engleză', 'Franceză']</ns1:languages>
+    <ns1:phoneNo>0743139448</ns1:phoneNo>
+  </ns2:translator>
+  <ns2:translator rdf:about="http://www.semanticweb.org/notis/Alina-Mihaela_Ababei">
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/tr5">
+        <ns1:city>NEAMT</ns1:city>
+        <ns1:courtOfAppeal>BACĂU</ns1:courtOfAppeal>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:phoneNo>0742956376</ns1:phoneNo>
+    <ns1:languages>['Engleză', 'Franceză']</ns1:languages>
+    <ns1:schedule>{'L': {'startH': 10, 'endH': 16}, 'M': {'startH': 12, 'endH': 17}, 'Mi': {'startH': 11, 'endH': 16}, 'J': {'startH': 12, 'endH': 19}, 'V': {'startH': 12, 'endH': 15}, 'S': {'startH': 12, 'endH': 15}, 'D': 'CLOSE'}</ns1:schedule>
+    <ns1:authorisationNr>33052</ns1:authorisationNr>
+    <ns1:lastName>Ababei</ns1:lastName>
+    <ns1:firstName>Alina-Mihaela</ns1:firstName>
+  </ns2:translator>
+  <ns2:translator rdf:about="http://www.semanticweb.org/notis/Adina_Mihaela_Ababei">
+    <ns1:firstName>Adina Mihaela</ns1:firstName>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/tr4">
+        <ns1:courtOfAppeal>IAŞI</ns1:courtOfAppeal>
+        <ns1:city>IASI</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:languages>['Franceză']</ns1:languages>
+    <ns1:schedule>{'L': {'startH': 12, 'endH': 18}, 'M': {'startH': 10, 'endH': 18}, 'Mi': {'startH': 10, 'endH': 16}, 'J': {'startH': 12, 'endH': 18}, 'V': 'CLOSE', 'S': {'startH': 11, 'endH': 16}, 'D': 'CLOSE'}</ns1:schedule>
+    <ns1:lastName>Ababei</ns1:lastName>
+    <ns1:authorisationNr>18372</ns1:authorisationNr>
+    <ns1:phoneNo>0742529242</ns1:phoneNo>
+  </ns2:translator>
+  <ns2:translator rdf:about="http://www.semanticweb.org/notis/Mihaela_Aanei">
+    <ns1:firstName>Mihaela</ns1:firstName>
+    <ns1:phoneNo>0721921461</ns1:phoneNo>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/tr3">
+        <ns1:city>BUCURESTI</ns1:city>
+        <ns1:courtOfAppeal>BUCUREŞTI</ns1:courtOfAppeal>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:schedule>{'L': {'startH': 8, 'endH': 16}, 'M': {'startH': 8, 'endH': 15}, 'Mi': {'startH': 10, 'endH': 19}, 'J': {'startH': 10, 'endH': 17}, 'V': 'CLOSE', 'S': {'startH': 10, 'endH': 16}, 'D': {'startH': 8, 'endH': 16}}</ns1:schedule>
+    <ns1:lastName>Aanei</ns1:lastName>
+    <ns1:languages>['Engleză']</ns1:languages>
+    <ns1:authorisationNr>8803</ns1:authorisationNr>
+  </ns2:translator>
+  <ns2:translator rdf:about="http://www.semanticweb.org/notis/Alina-Nicoleta_Aamoum">
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/tr0">
+        <ns1:city>BUZAU</ns1:city>
+        <ns1:courtOfAppeal>PLOIEŞTI</ns1:courtOfAppeal>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:phoneNo>2126679528</ns1:phoneNo>
+    <ns1:authorisationNr>5880</ns1:authorisationNr>
+    <ns1:lastName>Aamoum</ns1:lastName>
+    <ns1:firstName>Alina-Nicoleta</ns1:firstName>
+    <ns1:schedule>{'L': {'startH': 11, 'endH': 17}, 'M': {'startH': 9, 'endH': 17}, 'Mi': {'startH': 12, 'endH': 16}, 'J': {'startH': 9, 'endH': 18}, 'V': {'startH': 8, 'endH': 15}, 'S': 'CLOSE', 'D': {'startH': 10, 'endH': 19}}</ns1:schedule>
+    <ns1:languages>['Franceză', 'Rusă']</ns1:languages>
+  </ns2:translator>
+  <ns2:translator rdf:about="http://www.semanticweb.org/notis/Oana-Mihaela_Ababei">
+    <ns1:languages>['Franceză']</ns1:languages>
+    <ns1:schedule>{'L': {'startH': 9, 'endH': 19}, 'M': {'startH': 12, 'endH': 16}, 'Mi': {'startH': 12, 'endH': 17}, 'J': {'startH': 11, 'endH': 16}, 'V': {'startH': 11, 'endH': 19}, 'S': 'CLOSE', 'D': {'startH': 10, 'endH': 18}}</ns1:schedule>
+    <ns1:lastName>Ababei</ns1:lastName>
+    <ns1:authorisationNr>36656</ns1:authorisationNr>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/tr9">
+        <ns1:city>PRAHOVA</ns1:city>
+        <ns1:courtOfAppeal>PLOIEŞTI</ns1:courtOfAppeal>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:phoneNo>0747676968</ns1:phoneNo>
+    <ns1:firstName>Oana-Mihaela</ns1:firstName>
+  </ns2:translator>
+  <ns2:translator rdf:about="http://www.semanticweb.org/notis/Angela-Ilinca_Ababei">
+    <ns1:authorisationNr>6104</ns1:authorisationNr>
+    <ns1:schedule>{'L': {'startH': 9, 'endH': 18}, 'M': {'startH': 12, 'endH': 17}, 'Mi': {'startH': 11, 'endH': 16}, 'J': {'startH': 8, 'endH': 15}, 'V': {'startH': 8, 'endH': 17}, 'S': 'CLOSE', 'D': 'CLOSE'}</ns1:schedule>
+    <ns1:lastName>Ababei</ns1:lastName>
+    <ns1:firstName>Angela-Ilinca</ns1:firstName>
+    <ns1:phoneNo>0744739340</ns1:phoneNo>
+    <ns1:languages>['Engleză', 'Franceză']</ns1:languages>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/tr6">
+        <ns1:courtOfAppeal>BUCUREŞTI</ns1:courtOfAppeal>
+        <ns1:city>BUCURESTI</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+  </ns2:translator>
+  <ns2:translator rdf:about="http://www.semanticweb.org/notis/Carmen_Beatrice_Ababei">
+    <ns1:schedule>{'L': {'startH': 12, 'endH': 17}, 'M': {'startH': 11, 'endH': 19}, 'Mi': {'startH': 9, 'endH': 18}, 'J': {'startH': 10, 'endH': 19}, 'V': 'CLOSE', 'S': 'CLOSE', 'D': 'CLOSE'}</ns1:schedule>
+    <ns1:firstName>Carmen Beatrice</ns1:firstName>
+    <ns1:lastName>Ababei</ns1:lastName>
+    <ns1:phoneNo>0746911550</ns1:phoneNo>
+    <ns1:languages>['Franceză']</ns1:languages>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/tr7">
+        <ns1:city>GALATI</ns1:city>
+        <ns1:courtOfAppeal>GALAŢI</ns1:courtOfAppeal>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:authorisationNr>6396</ns1:authorisationNr>
+  </ns2:translator>
+  <ns2:translator rdf:about="http://www.semanticweb.org/notis/Andreea-Ramona_Aanei">
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/tr2">
+        <ns1:courtOfAppeal>SUCEAVA</ns1:courtOfAppeal>
+        <ns1:city>SUCEAVA</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:firstName>Andreea-Ramona</ns1:firstName>
+    <ns1:lastName>Aanei</ns1:lastName>
+    <ns1:languages>['Italiană']</ns1:languages>
+    <ns1:authorisationNr>32150</ns1:authorisationNr>
+    <ns1:phoneNo>0749765569</ns1:phoneNo>
+    <ns1:schedule>{'L': {'startH': 11, 'endH': 19}, 'M': {'startH': 8, 'endH': 18}, 'Mi': {'startH': 11, 'endH': 19}, 'J': {'startH': 10, 'endH': 19}, 'V': {'startH': 9, 'endH': 15}, 'S': 'CLOSE', 'D': 'CLOSE'}</ns1:schedule>
+  </ns2:translator>
+  <ns2:translator rdf:about="http://www.semanticweb.org/notis/Ioan_Ababei">
+    <ns1:languages>['Rusă']</ns1:languages>
+    <ns1:authorisationNr>1889</ns1:authorisationNr>
+    <ns1:lastName>Ababei</ns1:lastName>
+    <ns1:address>
+      <rdf:Description rdf:about="http://schema.org/address/tr8">
+        <ns1:courtOfAppeal>GALAŢI</ns1:courtOfAppeal>
+        <ns1:city>GALATI</ns1:city>
+      </rdf:Description>
+    </ns1:address>
+    <ns1:schedule>{'L': {'startH': 9, 'endH': 19}, 'M': {'startH': 10, 'endH': 15}, 'Mi': {'startH': 9, 'endH': 16}, 'J': {'startH': 8, 'endH': 19}, 'V': 'CLOSE', 'S': 'CLOSE', 'D': 'CLOSE'}</ns1:schedule>
+    <ns1:phoneNo>0236460085</ns1:phoneNo>
+    <ns1:firstName>Ioan</ns1:firstName>
+  </ns2:translator>
+  <ns1:Person rdf:about="https://www.merriam-webster.com/dictionary/translator"/>
+</rdf:RDF>
