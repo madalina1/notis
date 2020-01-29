@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import CustomMarker from "../../shared/Marker/Marker";
+import notaries from './notaries.json';
+import translators from './translators.json';
+
 
 const position = {
 	lat: 47.151726,
 	lng: 27.587914
 }
 
-interface MyProps { };
+interface MyProps { choice: boolean };
 interface MyState { popoverHover: boolean };
 
 class Home extends Component<MyProps, MyState> {
@@ -40,32 +43,39 @@ class Home extends Component<MyProps, MyState> {
 						height: "100vh",
 						width: "100%"
 					}}
-					zoom={15}
+					zoom={12}
 					center={position}
 
 				>
-					<CustomMarker 
-						position={position} 
-						text="Hello" 
-						title="Alina Notary" 
-						name="Alina Aanei" 
-						languages={["English", "Romanian"]}  
-						phoneNumber="0751753645"
-						schedule={{
-							"Mon": {startH: '09:00', endH: '15:00', specialHours: null},
-							"Tue": {startH: '09:00', endH: '15:00', specialHours: null},
-							"Wed": {startH: '09:00', endH: '15:00', specialHours: null},
-							"Thu": {startH: '09:00', endH: '15:00', specialHours: null},
-							"Fri": {startH: '09:00', endH: '15:00', specialHours: null},
-							"Sat": {startH: '09:00', endH: '15:00', specialHours: null},
-							"Sun": {startH: '09:00', endH: '15:00', specialHours: null}
-						}}
-						address={{
-							city: "Bacau",
-							locality: "Bacau",
-							courtOfAppeal: "Bacau"
-						}}
-					/>
+					{
+						this.props.choice ?
+							notaries.map(notary =>
+								<CustomMarker
+									position={{
+										lat: Number(notary.address.lat),
+										lng: Number(notary.address.long)
+									}}
+									title="Notary"
+									name={notary.personName}
+									languages={["English", "Romanian"]}
+									phoneNumber={notary.phoneNumber}
+									schedule={notary.schedule}
+									address={notary.address}
+								/>) :
+							translators.map(translator =>
+								<CustomMarker
+									position={{
+										lat: Number(translator.address.lat),
+										lng: Number(translator.address.long)
+									}}
+									title="Translator"
+									name={translator.personName}
+									languages={translator.languages}
+									phoneNumber={translator.phoneNumber}
+									schedule={translator.schedule}
+									address={translator.address}
+								/>)
+					}
 				</GoogleMap>
 			</LoadScript>
 		)

@@ -56,19 +56,19 @@ const CustomMarker = (props: any) => {
         <h4>{props.name}</h4>
       </div>
       <List>
-        <ListItem key="Languages" className="list-items">
+        {props.languages && <ListItem key="Languages" className="list-items">
           <ListItemIcon className="list-icon">{<MdLanguage />}</ListItemIcon>
           <ListItemText primary={<div className="list-items-text"><h5>Languages</h5><h5>{props.languages.join(", ")}</h5></div>} />
-        </ListItem>
+        </ListItem>}
         <ListItem key="Phone Number" className="list-items">
           <ListItemIcon className="list-icon">{<MdSettingsPhone />}</ListItemIcon>
-          <ListItemText primary={<div className="list-items-text"><h5>Phone Number</h5><h5 style={{ marginRight: '34px' }}>{props.phoneNumber}</h5></div>} />
+          <ListItemText primary={<div className="list-items-text"><h5>Phone Number</h5><h5>{props.phoneNumber}</h5></div>} />
         </ListItem>
         <ListItem key="Schedule" className="list-items">
           <ListItemIcon className="list-icon">{<AiOutlineSchedule />}</ListItemIcon>
           <ListItemText primary={<div className="list-items-text">
             <h5 style={{ display: 'flex', alignItems: 'center' }}>Schedule</h5>
-            <div style={{ marginRight: '-2px' }}>
+            <div>
               {
                 Object.keys(props.schedule).map((element: any, key: any) => <h5 className="schedule" key={key}><b>{element}</b>: {props.schedule[element].startH} - {props.schedule[element].endH}</h5>)
               }
@@ -87,7 +87,6 @@ const CustomMarker = (props: any) => {
           <Rating
             name="simple-controlled"
             value={value}
-            style={{marginRight: '8px'}}
             onChange={(event, newValue) => {
               setValue(newValue);
             }}
