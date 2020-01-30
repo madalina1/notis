@@ -12,3 +12,17 @@ C:\Work\RDF\notis\obj\Debug\netcoreapp2.2\notis.RazorTargetAssemblyInfo.cache
 C:\Work\RDF\notis\obj\Debug\netcoreapp2.2\notis.dll
 C:\Work\RDF\notis\obj\Debug\netcoreapp2.2\notis.pdb
 C:\Work\RDF\notis\obj\Debug\netcoreapp2.2\notis.csprojAssemblyReference.cache
+C:\Work\Git-notis\Sources\Backend\notis\bin\Debug\netcoreapp2.2\notis.deps.json
+C:\Work\Git-notis\Sources\Backend\notis\bin\Debug\netcoreapp2.2\notis.runtimeconfig.json
+C:\Work\Git-notis\Sources\Backend\notis\bin\Debug\netcoreapp2.2\notis.runtimeconfig.dev.json
+C:\Work\Git-notis\Sources\Backend\notis\bin\Debug\netcoreapp2.2\notis.dll
+C:\Work\Git-notis\Sources\Backend\notis\bin\Debug\netcoreapp2.2\notis.pdb
+C:\Work\Git-notis\Sources\Backend\notis\obj\Debug\netcoreapp2.2\notis.csprojAssemblyReference.cache
+C:\Work\Git-notis\Sources\Backend\notis\obj\Debug\netcoreapp2.2\notis.csproj.CoreCompileInputs.cache
+C:\Work\Git-notis\Sources\Backend\notis\obj\Debug\netcoreapp2.2\notis.RazorAssemblyInfo.cache
+C:\Work\Git-notis\Sources\Backend\notis\obj\Debug\netcoreapp2.2\notis.RazorAssemblyInfo.cs
+C:\Work\Git-notis\Sources\Backend\notis\obj\Debug\netcoreapp2.2\notis.AssemblyInfoInputs.cache
+C:\Work\Git-notis\Sources\Backend\notis\obj\Debug\netcoreapp2.2\notis.AssemblyInfo.cs
+C:\Work\Git-notis\Sources\Backend\notis\obj\Debug\netcoreapp2.2\notis.RazorTargetAssemblyInfo.cache
+C:\Work\Git-notis\Sources\Backend\notis\obj\Debug\netcoreapp2.2\notis.dll
+C:\Work\Git-notis\Sources\Backend\notis\obj\Debug\netcoreapp2.2\notis.pdb

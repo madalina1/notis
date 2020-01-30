@@ -148,7 +148,7 @@ namespace notis.Business.Services
                 }
             }
 
-            notary.Services = servicesService.GetServiceForOffice(name);
+            notary.Services = servicesService.GetServiceForOffice("notary", name);
 
             return notary;
         }
@@ -164,25 +164,43 @@ namespace notis.Business.Services
             string days)
         {
             isSupportedForeignCitizens = isSupportedForeignCitizens ?? 1;
-            city = city ?? "IASI";
-            typeOfService = typeOfService ?? "Contracte de ipoteca imobiliara";
-            minPrice = 10;
-            maxPrice = 110;
-            days = "Mon,Fri,Sun";
-            startH = 8;
-            endH = 18;
+            city = "IASI";
+            typeOfService = typeOfService ?? "Contracts_of_imobiliar_mortgage";
+            minPrice = minPrice ?? 10;
+            maxPrice = maxPrice ?? 610;
+            days = days ?? "Mon,Tue,Wed,Thu,Fri,Sat,Sun";
+            startH = startH ?? 7;
+            endH = endH ?? 18;
 
             var notariesList = new List<Notary>();
 
-            var query = "SELECT  distinct *" +
+            var query = "";
+
+            if (!string.IsNullOrEmpty(typeOfService))
+            {
+                query = "SELECT  distinct *" +
                         "WHERE { " +
                         "?person rdf:type notis2:notaryPerson." +
                         "?person ns1:firstName ?firstName." +
                         "?person ns1:lastName ?lastName." +
                         "?person ns1:isSupportedForeignCitizens ?isSupportedForeignCitizens ." +
+                        "?person ns1:address ?address ." +
                         "?address ns1:city ?city ." +
                         "?person notis2:hasServices notis2:" + typeOfService.Replace(" ", "_") + " ." +
                         "FILTER(?city = \"" + city + "\" && ?isSupportedForeignCitizens =" + isSupportedForeignCitizens + ")" + "}";
+            }
+            else
+            {
+                query = "SELECT  distinct *" +
+                        "WHERE { " +
+                        "?person rdf:type notis2:notaryPerson." +
+                        "?person ns1:firstName ?firstName." +
+                        "?person ns1:lastName ?lastName." +
+                        "?person ns1:isSupportedForeignCitizens ?isSupportedForeignCitizens ." +
+                        "?person ns1:address ?address ." +
+                        "?address ns1:city ?city ." +
+                        "FILTER(?city = \"" + city + "\" && ?isSupportedForeignCitizens =" + isSupportedForeignCitizens + ")" + "}";
+            }
 
             var individ = (SparqlResultSet)rdfRepository.ProcessQuery(query);
 

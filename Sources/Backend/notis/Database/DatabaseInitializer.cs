@@ -11,7 +11,7 @@ namespace notis.Database
 {
     public class DatabaseInitializer
     {
-        public static string ontology = "C:\\Work\\RDF\\notis\\Database\\notis.owl";
+        public static string ontology = "C:\\Work\\Git-notis\\Sources\\Backend\\notis\\Database\\notis.owl";
 
         public static IGraph Initialize()
         {

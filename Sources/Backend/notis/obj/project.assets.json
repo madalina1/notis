@@ -12755,11 +12755,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\RDF\\notis\\notis.csproj",
+      "projectUniqueName": "C:\\Work\\Git-notis\\Sources\\Backend\\notis\\notis.csproj",
       "projectName": "notis",
-      "projectPath": "C:\\Work\\RDF\\notis\\notis.csproj",
+      "projectPath": "C:\\Work\\Git-notis\\Sources\\Backend\\notis\\notis.csproj",
       "packagesPath": "C:\\Users\\cmacariu\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\RDF\\notis\\obj\\",
+      "outputPath": "C:\\Work\\Git-notis\\Sources\\Backend\\notis\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

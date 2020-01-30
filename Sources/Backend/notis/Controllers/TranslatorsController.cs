@@ -27,5 +27,29 @@ namespace notis.Controllers
 
             return Ok(result);
         }
+
+        [HttpGet]
+        [Route("filters")]
+        public IActionResult GetTranslatorsByFilters(
+            string city,
+            string typeOfService,
+            double? minPrice,
+            double? maxPrice,
+            int? isSupportedForeignCitizens,
+            int? startH,
+            int? endH,
+            string days)
+        {
+            var result = translatorService.GetTranslatorsOfficesByFilters(
+                city,
+                typeOfService,
+                minPrice,
+                maxPrice,
+                startH,
+                endH,
+                days);
+
+            return Ok(result);
+        }
     }
 }

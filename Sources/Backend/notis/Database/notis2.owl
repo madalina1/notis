@@ -1,0 +1,2092 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/notis"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/notis">
+    <Prefix name="" IRI="http://www.semanticweb.org/notis#"/>
+    <Prefix name="ns1" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="notis" IRI="http://www.semanticweb.org/notis#"/>
+    <Prefix name="notis2" IRI="http://www.semanticweb.org/notis/"/>
+    <Declaration>
+        <Class IRI="/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/necessary-papers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/notary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/notary-type-of-service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/notaryPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/translation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/translation-type-of-service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/translator"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="ns1:Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasProperties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasServices"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/needs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/provideService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/provides"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://schema.org/Place"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#authorizedNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isSupportedForeignCitizens"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#languages"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#necessaryPapers"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#serviceName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/phone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/schedule"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Act_that_you_request_the_legalization_of_the_signature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Adina_Mihaela_Ababei"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Alina-Mihaela_Ababei"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Alina-Nicoleta_Aamoum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Alina_Aanei"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Andreea-Ramona_Aanei"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Angela-Ilinca_Ababei"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Birth_certificate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Birth_certificate_for_minor_children"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/CLAUDIA_AVASILOAE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Cadastral_documentation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Carmen_Beatrice_Ababei"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Contracts_for_hire_or_rental"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Copy_of_the_identity_document_of_the_person_in_favor_of_whom_the_will_is_left"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/DANIELA_BADARAU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Death_certificate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Divorce_procedure_through_the_agreement_of_the_spouses"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Entries_according_to_the_specific_of_the_declaration_or_power_of_attorney"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Extracts_from_land_book"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Financial_documents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Fiscal_certificate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/GABRIELA_ANTON"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/IOANA_ANGELA_BELDEANU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Ioan_Ababei"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Legal_documents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Legalizations_of_copies_of_some_inscriptions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/MARIANA_OTILIA_BALAN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Marriage_certificate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Medical_documents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Mihaela_Aanei"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Oana-Mihaela_Ababei"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Power_of_Attorney"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Pre-contract_of_sale-buy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Property_documents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/RALUCA_ANDRIESCU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/RAZVAN_ANTOHIE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/SIMONA-STEFANIA_BALAN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/STELA_BADARAU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Statements_or_proxies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Techical_documents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Testament_act"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Urban_certificate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Wills"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/notaryPerson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://www.merriam-webster.com/dictionary/translator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:authorisationNr"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:county"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:courtOfAppeal"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:isSupportedForeignCitizens"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:languages"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:locality"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="ns1:street"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/notary"/>
+        <Class IRI="/service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/notaryPerson"/>
+        <Class IRI="/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/translation"/>
+        <Class IRI="/service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/translator"/>
+        <Class IRI="/Person"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="/necessary-papers"/>
+        <NamedIndividual IRI="/Act_that_you_request_the_legalization_of_the_signature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translator"/>
+        <NamedIndividual IRI="/Adina_Mihaela_Ababei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translator"/>
+        <NamedIndividual IRI="/Alina-Mihaela_Ababei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translator"/>
+        <NamedIndividual IRI="/Alina-Nicoleta_Aamoum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translator"/>
+        <NamedIndividual IRI="/Alina_Aanei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translator"/>
+        <NamedIndividual IRI="/Andreea-Ramona_Aanei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translator"/>
+        <NamedIndividual IRI="/Angela-Ilinca_Ababei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/necessary-papers"/>
+        <NamedIndividual IRI="/Birth_certificate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/necessary-papers"/>
+        <NamedIndividual IRI="/Birth_certificate_for_minor_children"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notaryPerson"/>
+        <NamedIndividual IRI="/CLAUDIA_AVASILOAE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/necessary-papers"/>
+        <NamedIndividual IRI="/Cadastral_documentation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translator"/>
+        <NamedIndividual IRI="/Carmen_Beatrice_Ababei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notary-type-of-service"/>
+        <NamedIndividual IRI="/Contracts_for_hire_or_rental"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notary-type-of-service"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notary-type-of-service"/>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notary-type-of-service"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/necessary-papers"/>
+        <NamedIndividual IRI="/Copy_of_the_identity_document_of_the_person_in_favor_of_whom_the_will_is_left"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notaryPerson"/>
+        <NamedIndividual IRI="/DANIELA_BADARAU"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/necessary-papers"/>
+        <NamedIndividual IRI="/Death_certificate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notary-type-of-service"/>
+        <NamedIndividual IRI="/Divorce_procedure_through_the_agreement_of_the_spouses"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/necessary-papers"/>
+        <NamedIndividual IRI="/Entries_according_to_the_specific_of_the_declaration_or_power_of_attorney"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/necessary-papers"/>
+        <NamedIndividual IRI="/Extracts_from_land_book"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translation-type-of-service"/>
+        <NamedIndividual IRI="/Financial_documents"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/necessary-papers"/>
+        <NamedIndividual IRI="/Fiscal_certificate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notaryPerson"/>
+        <NamedIndividual IRI="/GABRIELA_ANTON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notaryPerson"/>
+        <NamedIndividual IRI="/IOANA_ANGELA_BELDEANU"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translator"/>
+        <NamedIndividual IRI="/Ioan_Ababei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translation-type-of-service"/>
+        <NamedIndividual IRI="/Legal_documents"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notary-type-of-service"/>
+        <NamedIndividual IRI="/Legalizations_of_copies_of_some_inscriptions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notaryPerson"/>
+        <NamedIndividual IRI="/MARIANA_OTILIA_BALAN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/necessary-papers"/>
+        <NamedIndividual IRI="/Marriage_certificate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translation-type-of-service"/>
+        <NamedIndividual IRI="/Medical_documents"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translator"/>
+        <NamedIndividual IRI="/Mihaela_Aanei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translator"/>
+        <NamedIndividual IRI="/Oana-Mihaela_Ababei"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notary-type-of-service"/>
+        <NamedIndividual IRI="/Power_of_Attorney"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notary-type-of-service"/>
+        <NamedIndividual IRI="/Pre-contract_of_sale-buy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/necessary-papers"/>
+        <NamedIndividual IRI="/Property_documents"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notaryPerson"/>
+        <NamedIndividual IRI="/RALUCA_ANDRIESCU"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notaryPerson"/>
+        <NamedIndividual IRI="/RAZVAN_ANTOHIE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notaryPerson"/>
+        <NamedIndividual IRI="/SIMONA-STEFANIA_BALAN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notaryPerson"/>
+        <NamedIndividual IRI="/STELA_BADARAU"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notary-type-of-service"/>
+        <NamedIndividual IRI="/Statements_or_proxies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/translation-type-of-service"/>
+        <NamedIndividual IRI="/Techical_documents"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/necessary-papers"/>
+        <NamedIndividual IRI="/Testament_act"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/necessary-papers"/>
+        <NamedIndividual IRI="/Urban_certificate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/notary-type-of-service"/>
+        <NamedIndividual IRI="/Wills"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ns1:Person"/>
+        <NamedIndividual IRI="/notaryPerson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="ns1:Person"/>
+        <NamedIndividual IRI="https://www.merriam-webster.com/dictionary/translator"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Adina_Mihaela_Ababei"/>
+        <NamedIndividual IRI="/Medical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Adina_Mihaela_Ababei"/>
+        <NamedIndividual IRI="/Techical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Adina_Mihaela_Ababei"/>
+        <NamedIndividual IRI="/Financial_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Adina_Mihaela_Ababei"/>
+        <NamedIndividual IRI="/Legal_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Alina-Mihaela_Ababei"/>
+        <NamedIndividual IRI="/Legal_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Alina-Mihaela_Ababei"/>
+        <NamedIndividual IRI="/Medical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Alina-Mihaela_Ababei"/>
+        <NamedIndividual IRI="/Financial_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Alina-Mihaela_Ababei"/>
+        <NamedIndividual IRI="/Techical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Alina-Nicoleta_Aamoum"/>
+        <NamedIndividual IRI="/Financial_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Alina-Nicoleta_Aamoum"/>
+        <NamedIndividual IRI="/Techical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Alina-Nicoleta_Aamoum"/>
+        <NamedIndividual IRI="/Medical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Alina-Nicoleta_Aamoum"/>
+        <NamedIndividual IRI="/Legal_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Alina_Aanei"/>
+        <NamedIndividual IRI="/Financial_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Alina_Aanei"/>
+        <NamedIndividual IRI="/Legal_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Alina_Aanei"/>
+        <NamedIndividual IRI="/Medical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Andreea-Ramona_Aanei"/>
+        <NamedIndividual IRI="/Medical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Andreea-Ramona_Aanei"/>
+        <NamedIndividual IRI="/Legal_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Andreea-Ramona_Aanei"/>
+        <NamedIndividual IRI="/Financial_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Angela-Ilinca_Ababei"/>
+        <NamedIndividual IRI="/Legal_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Angela-Ilinca_Ababei"/>
+        <NamedIndividual IRI="/Techical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Angela-Ilinca_Ababei"/>
+        <NamedIndividual IRI="/Financial_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/CLAUDIA_AVASILOAE"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/CLAUDIA_AVASILOAE"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/CLAUDIA_AVASILOAE"/>
+        <NamedIndividual IRI="/Pre-contract_of_sale-buy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/CLAUDIA_AVASILOAE"/>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/CLAUDIA_AVASILOAE"/>
+        <NamedIndividual IRI="/Contracts_for_hire_or_rental"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/CLAUDIA_AVASILOAE"/>
+        <NamedIndividual IRI="/Divorce_procedure_through_the_agreement_of_the_spouses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/CLAUDIA_AVASILOAE"/>
+        <NamedIndividual IRI="/Power_of_Attorney"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/CLAUDIA_AVASILOAE"/>
+        <NamedIndividual IRI="/Legalizations_of_copies_of_some_inscriptions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Carmen_Beatrice_Ababei"/>
+        <NamedIndividual IRI="/Legal_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Carmen_Beatrice_Ababei"/>
+        <NamedIndividual IRI="/Financial_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Carmen_Beatrice_Ababei"/>
+        <NamedIndividual IRI="/Techical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Contracts_for_hire_or_rental"/>
+        <NamedIndividual IRI="/Property_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+        <NamedIndividual IRI="/Fiscal_certificate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+        <NamedIndividual IRI="/Property_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+        <NamedIndividual IRI="/Cadastral_documentation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+        <NamedIndividual IRI="/Extracts_from_land_book"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+        <NamedIndividual IRI="/Extracts_from_land_book"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+        <NamedIndividual IRI="/Property_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+        <NamedIndividual IRI="/Fiscal_certificate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+        <NamedIndividual IRI="/Cadastral_documentation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+        <NamedIndividual IRI="/Extracts_from_land_book"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+        <NamedIndividual IRI="/Urban_certificate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+        <NamedIndividual IRI="/Fiscal_certificate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+        <NamedIndividual IRI="/Property_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/DANIELA_BADARAU"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/DANIELA_BADARAU"/>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/DANIELA_BADARAU"/>
+        <NamedIndividual IRI="/Pre-contract_of_sale-buy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/DANIELA_BADARAU"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/DANIELA_BADARAU"/>
+        <NamedIndividual IRI="/Contracts_for_hire_or_rental"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/DANIELA_BADARAU"/>
+        <NamedIndividual IRI="/Legalizations_of_copies_of_some_inscriptions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/DANIELA_BADARAU"/>
+        <NamedIndividual IRI="/Power_of_Attorney"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/DANIELA_BADARAU"/>
+        <NamedIndividual IRI="/Divorce_procedure_through_the_agreement_of_the_spouses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Divorce_procedure_through_the_agreement_of_the_spouses"/>
+        <NamedIndividual IRI="/Birth_certificate_for_minor_children"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Divorce_procedure_through_the_agreement_of_the_spouses"/>
+        <NamedIndividual IRI="/Marriage_certificate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Divorce_procedure_through_the_agreement_of_the_spouses"/>
+        <NamedIndividual IRI="/Birth_certificate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/GABRIELA_ANTON"/>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/GABRIELA_ANTON"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/GABRIELA_ANTON"/>
+        <NamedIndividual IRI="/Power_of_Attorney"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/GABRIELA_ANTON"/>
+        <NamedIndividual IRI="/Divorce_procedure_through_the_agreement_of_the_spouses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/GABRIELA_ANTON"/>
+        <NamedIndividual IRI="/Legalizations_of_copies_of_some_inscriptions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/GABRIELA_ANTON"/>
+        <NamedIndividual IRI="/Pre-contract_of_sale-buy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/GABRIELA_ANTON"/>
+        <NamedIndividual IRI="/Contracts_for_hire_or_rental"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/GABRIELA_ANTON"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/IOANA_ANGELA_BELDEANU"/>
+        <NamedIndividual IRI="/Divorce_procedure_through_the_agreement_of_the_spouses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/IOANA_ANGELA_BELDEANU"/>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/IOANA_ANGELA_BELDEANU"/>
+        <NamedIndividual IRI="/Pre-contract_of_sale-buy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/IOANA_ANGELA_BELDEANU"/>
+        <NamedIndividual IRI="/Legalizations_of_copies_of_some_inscriptions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/IOANA_ANGELA_BELDEANU"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/IOANA_ANGELA_BELDEANU"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/IOANA_ANGELA_BELDEANU"/>
+        <NamedIndividual IRI="/Power_of_Attorney"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/IOANA_ANGELA_BELDEANU"/>
+        <NamedIndividual IRI="/Contracts_for_hire_or_rental"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Ioan_Ababei"/>
+        <NamedIndividual IRI="/Medical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Ioan_Ababei"/>
+        <NamedIndividual IRI="/Financial_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Ioan_Ababei"/>
+        <NamedIndividual IRI="/Techical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Legalizations_of_copies_of_some_inscriptions"/>
+        <NamedIndividual IRI="/Act_that_you_request_the_legalization_of_the_signature"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/MARIANA_OTILIA_BALAN"/>
+        <NamedIndividual IRI="/Pre-contract_of_sale-buy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/MARIANA_OTILIA_BALAN"/>
+        <NamedIndividual IRI="/Power_of_Attorney"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/MARIANA_OTILIA_BALAN"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/MARIANA_OTILIA_BALAN"/>
+        <NamedIndividual IRI="/Legalizations_of_copies_of_some_inscriptions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/MARIANA_OTILIA_BALAN"/>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/MARIANA_OTILIA_BALAN"/>
+        <NamedIndividual IRI="/Divorce_procedure_through_the_agreement_of_the_spouses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/MARIANA_OTILIA_BALAN"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/MARIANA_OTILIA_BALAN"/>
+        <NamedIndividual IRI="/Contracts_for_hire_or_rental"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Mihaela_Aanei"/>
+        <NamedIndividual IRI="/Techical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Mihaela_Aanei"/>
+        <NamedIndividual IRI="/Financial_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/Mihaela_Aanei"/>
+        <NamedIndividual IRI="/Medical_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Power_of_Attorney"/>
+        <NamedIndividual IRI="/Marriage_certificate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Power_of_Attorney"/>
+        <NamedIndividual IRI="/Testament_act"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Power_of_Attorney"/>
+        <NamedIndividual IRI="/Death_certificate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Pre-contract_of_sale-buy"/>
+        <NamedIndividual IRI="/Property_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RALUCA_ANDRIESCU"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RALUCA_ANDRIESCU"/>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RALUCA_ANDRIESCU"/>
+        <NamedIndividual IRI="/Divorce_procedure_through_the_agreement_of_the_spouses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RALUCA_ANDRIESCU"/>
+        <NamedIndividual IRI="/Legalizations_of_copies_of_some_inscriptions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RALUCA_ANDRIESCU"/>
+        <NamedIndividual IRI="/Contracts_for_hire_or_rental"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RALUCA_ANDRIESCU"/>
+        <NamedIndividual IRI="/Power_of_Attorney"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RALUCA_ANDRIESCU"/>
+        <NamedIndividual IRI="/Pre-contract_of_sale-buy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RALUCA_ANDRIESCU"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RAZVAN_ANTOHIE"/>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RAZVAN_ANTOHIE"/>
+        <NamedIndividual IRI="/Legalizations_of_copies_of_some_inscriptions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RAZVAN_ANTOHIE"/>
+        <NamedIndividual IRI="/Power_of_Attorney"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RAZVAN_ANTOHIE"/>
+        <NamedIndividual IRI="/Pre-contract_of_sale-buy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RAZVAN_ANTOHIE"/>
+        <NamedIndividual IRI="/Contracts_for_hire_or_rental"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RAZVAN_ANTOHIE"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RAZVAN_ANTOHIE"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/RAZVAN_ANTOHIE"/>
+        <NamedIndividual IRI="/Divorce_procedure_through_the_agreement_of_the_spouses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/SIMONA-STEFANIA_BALAN"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/SIMONA-STEFANIA_BALAN"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/SIMONA-STEFANIA_BALAN"/>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/SIMONA-STEFANIA_BALAN"/>
+        <NamedIndividual IRI="/Contracts_for_hire_or_rental"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/STELA_BADARAU"/>
+        <NamedIndividual IRI="/Contracts_of_sharing_or_disruption"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/STELA_BADARAU"/>
+        <NamedIndividual IRI="/Contracts_for_hire_or_rental"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/STELA_BADARAU"/>
+        <NamedIndividual IRI="/Contracts_of_imobiliar_mortgage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasServices"/>
+        <NamedIndividual IRI="/STELA_BADARAU"/>
+        <NamedIndividual IRI="/Contracts_of_sale-purchase_or_donation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Statements_or_proxies"/>
+        <NamedIndividual IRI="/Entries_according_to_the_specific_of_the_declaration_or_power_of_attorney"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Wills"/>
+        <NamedIndividual IRI="/Copy_of_the_identity_document_of_the_person_in_favor_of_whom_the_will_is_left"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/needs"/>
+        <NamedIndividual IRI="/Wills"/>
+        <NamedIndividual IRI="/Property_documents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/provideService"/>
+        <Class IRI="/notaryPerson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/provides"/>
+        <Class IRI="/translator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/provideService"/>
+        <Class IRI="/notary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/provides"/>
+        <Class IRI="/translation"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/0</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IASI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/0</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:locality"/>
+        <IRI>http://schema.org/address/0</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BIVOLARI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:street"/>
+        <IRI>http://schema.org/address/0</IRI>
+        <Literal datatypeIRI="&xsd;double">nan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IASI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:locality"/>
+        <IRI>http://schema.org/address/1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BIVOLARI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:street"/>
+        <IRI>http://schema.org/address/1</IRI>
+        <Literal datatypeIRI="&xsd;double">nan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IASI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:locality"/>
+        <IRI>http://schema.org/address/2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CIOHORANI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:street"/>
+        <IRI>http://schema.org/address/2</IRI>
+        <Literal datatypeIRI="&xsd;double">nan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/3</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IASI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/3</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:locality"/>
+        <IRI>http://schema.org/address/3</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">HOLBOCA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:street"/>
+        <IRI>http://schema.org/address/3</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SAT DANCU, NR. 11 A</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/4</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IASI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/4</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:locality"/>
+        <IRI>http://schema.org/address/4</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TANSA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:street"/>
+        <IRI>http://schema.org/address/4</IRI>
+        <Literal datatypeIRI="&xsd;double">nan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/5</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IASI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/5</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:locality"/>
+        <IRI>http://schema.org/address/5</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IAŞI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:street"/>
+        <IRI>http://schema.org/address/5</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ŞTEFAN CEL MARE ŞI SFÂNT, NR. 3, PARTER</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/6</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IASI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/6</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:locality"/>
+        <IRI>http://schema.org/address/6</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> IASI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:street"/>
+        <IRI>http://schema.org/address/6</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">STR. A PANU, BL. H1, PARTER</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/7</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IASI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/7</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:locality"/>
+        <IRI>http://schema.org/address/7</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ŢIBĂNEŞTI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:street"/>
+        <IRI>http://schema.org/address/7</IRI>
+        <Literal datatypeIRI="&xsd;double">nan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/8</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IASI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/8</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:locality"/>
+        <IRI>http://schema.org/address/8</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IAŞI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:street"/>
+        <IRI>http://schema.org/address/8</IRI>
+        <Literal datatypeIRI="&xsd;double">nan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/9</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IASI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/9</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.12995076, &apos;long&apos;: 27.65790939}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:locality"/>
+        <IRI>http://schema.org/address/9</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IASI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:street"/>
+        <IRI>http://schema.org/address/9</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">STR. NICOLINA NR. 11, BL. A5, SC. B PARTER</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/tr0</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BUZAU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/tr0</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.15570399, &apos;long&apos;: 27.68949509}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:courtOfAppeal"/>
+        <IRI>http://schema.org/address/tr0</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PLOIEŞTI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/tr1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BACAU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/tr1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.12386303, &apos;long&apos;: 27.55710125}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:courtOfAppeal"/>
+        <IRI>http://schema.org/address/tr1</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BACĂU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/tr2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SUCEAVA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/tr2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.14527796, &apos;long&apos;: 27.53753185}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:courtOfAppeal"/>
+        <IRI>http://schema.org/address/tr2</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SUCEAVA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/tr3</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BUCURESTI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/tr3</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.17292886, &apos;long&apos;: 27.48165607}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:courtOfAppeal"/>
+        <IRI>http://schema.org/address/tr3</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BUCUREŞTI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/tr4</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IASI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/tr4</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.17980397, &apos;long&apos;: 27.4982214}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:courtOfAppeal"/>
+        <IRI>http://schema.org/address/tr4</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IAŞI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/tr5</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NEAMT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/tr5</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.17324509, &apos;long&apos;: 27.56748676}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:courtOfAppeal"/>
+        <IRI>http://schema.org/address/tr5</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BACĂU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/tr6</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BUCURESTI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/tr6</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.1765706, &apos;long&apos;: 27.57787228}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:courtOfAppeal"/>
+        <IRI>http://schema.org/address/tr6</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BUCUREŞTI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/tr7</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GALATI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/tr7</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.18366256, &apos;long&apos;: 27.56525517}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:courtOfAppeal"/>
+        <IRI>http://schema.org/address/tr7</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GALAŢI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/tr8</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GALATI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/tr8</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.17680397, &apos;long&apos;: 27.5510931}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:courtOfAppeal"/>
+        <IRI>http://schema.org/address/tr8</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GALAŢI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:city"/>
+        <IRI>http://schema.org/address/tr9</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PRAHOVA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:coordinates"/>
+        <IRI>http://schema.org/address/tr9</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;lat&apos;: 47.17239558, &apos;long&apos;: 27.54173756}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:courtOfAppeal"/>
+        <IRI>http://schema.org/address/tr9</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PLOIEŞTI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/Adina_Mihaela_Ababei</IRI>
+        <IRI>http://schema.org/address/tr4</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:authorisationNr"/>
+        <IRI>/Adina_Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">18372</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/Adina_Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Adina Mihaela</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:languages"/>
+        <IRI>/Adina_Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">[&apos;Franceză&apos;]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/Adina_Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ababei</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/Adina_Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0743930606</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/Adina_Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 15}, &apos;Tue&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 15}, &apos;Wed&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 18}, &apos;Thu&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 16}, &apos;Fri&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 15}, &apos;Sat&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 17}, &apos;Sun&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 16}}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/Alina-Mihaela_Ababei</IRI>
+        <IRI>http://schema.org/address/tr5</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:authorisationNr"/>
+        <IRI>/Alina-Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">33052</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/Alina-Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alina-Mihaela</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:languages"/>
+        <IRI>/Alina-Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">[&apos;Engleză&apos;, &apos;Franceză&apos;]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/Alina-Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ababei</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/Alina-Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0745714195</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/Alina-Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 18}, &apos;Tue&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 17}, &apos;Wed&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 17}, &apos;Thu&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;Fri&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 18}, &apos;Sat&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 19}, &apos;Sun&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 16}}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/Alina-Nicoleta_Aamoum</IRI>
+        <IRI>http://schema.org/address/tr0</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:authorisationNr"/>
+        <IRI>/Alina-Nicoleta_Aamoum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">5880</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/Alina-Nicoleta_Aamoum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alina-Nicoleta</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:languages"/>
+        <IRI>/Alina-Nicoleta_Aamoum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">[&apos;Franceză&apos;, &apos;Rusă&apos;]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/Alina-Nicoleta_Aamoum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aamoum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/Alina-Nicoleta_Aamoum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2126679528</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/Alina-Nicoleta_Aamoum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 17}, &apos;Tue&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 18}, &apos;Wed&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}, &apos;Thu&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 15}, &apos;Fri&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 17}, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: &apos;CLOSE&apos;}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/Alina_Aanei</IRI>
+        <IRI>http://schema.org/address/tr1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:authorisationNr"/>
+        <IRI>/Alina_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">8733</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/Alina_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Alina</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:languages"/>
+        <IRI>/Alina_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">[&apos;Engleză&apos;, &apos;Franceză&apos;]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/Alina_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aanei</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/Alina_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0744658415</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/Alina_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 16}, &apos;Tue&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 18}, &apos;Wed&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 15}, &apos;Thu&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 15}, &apos;Fri&apos;: &apos;CLOSE&apos;, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: &apos;CLOSE&apos;}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/Andreea-Ramona_Aanei</IRI>
+        <IRI>http://schema.org/address/tr2</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:authorisationNr"/>
+        <IRI>/Andreea-Ramona_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">32150</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/Andreea-Ramona_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Andreea-Ramona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:languages"/>
+        <IRI>/Andreea-Ramona_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">[&apos;Italiană&apos;]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/Andreea-Ramona_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aanei</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/Andreea-Ramona_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0743293565</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/Andreea-Ramona_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 15}, &apos;Tue&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}, &apos;Wed&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 15}, &apos;Thu&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 16}, &apos;Fri&apos;: &apos;CLOSE&apos;, &apos;Sat&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 19}, &apos;Sun&apos;: &apos;CLOSE&apos;}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/Angela-Ilinca_Ababei</IRI>
+        <IRI>http://schema.org/address/tr6</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:authorisationNr"/>
+        <IRI>/Angela-Ilinca_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">6104</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/Angela-Ilinca_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Angela-Ilinca</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:languages"/>
+        <IRI>/Angela-Ilinca_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">[&apos;Engleză&apos;, &apos;Franceză&apos;]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/Angela-Ilinca_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ababei</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/Angela-Ilinca_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0747034758</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/Angela-Ilinca_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 17}, &apos;Tue&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 17}, &apos;Wed&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 17}, &apos;Thu&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 19}, &apos;Fri&apos;: &apos;CLOSE&apos;, &apos;Sat&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 17}, &apos;Sun&apos;: &apos;CLOSE&apos;}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/CLAUDIA_AVASILOAE</IRI>
+        <IRI>http://schema.org/address/4</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/CLAUDIA_AVASILOAE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">CLAUDIA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:isSupportedForeignCitizens"/>
+        <IRI>/CLAUDIA_AVASILOAE</IRI>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/CLAUDIA_AVASILOAE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">AVASILOAE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/CLAUDIA_AVASILOAE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0742245962</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/CLAUDIA_AVASILOAE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 16}, &apos;Tue&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 19}, &apos;Wed&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 16}, &apos;Thu&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;Fri&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 17}, &apos;Sat&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 17}, &apos;Sun&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/Carmen_Beatrice_Ababei</IRI>
+        <IRI>http://schema.org/address/tr7</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:authorisationNr"/>
+        <IRI>/Carmen_Beatrice_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">6396</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/Carmen_Beatrice_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Carmen Beatrice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:languages"/>
+        <IRI>/Carmen_Beatrice_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">[&apos;Franceză&apos;]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/Carmen_Beatrice_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ababei</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/Carmen_Beatrice_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0748931073</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/Carmen_Beatrice_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 15}, &apos;Tue&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 17}, &apos;Wed&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}, &apos;Thu&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 19}, &apos;Fri&apos;: &apos;CLOSE&apos;, &apos;Sat&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 17}, &apos;Sun&apos;: &apos;CLOSE&apos;}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/DANIELA_BADARAU</IRI>
+        <IRI>http://schema.org/address/5</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/DANIELA_BADARAU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DANIELA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:isSupportedForeignCitizens"/>
+        <IRI>/DANIELA_BADARAU</IRI>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/DANIELA_BADARAU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BADARAU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/DANIELA_BADARAU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0744437114</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/DANIELA_BADARAU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 17}, &apos;Tue&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 18}, &apos;Wed&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 18}, &apos;Thu&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 18}, &apos;Fri&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 15}, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 16}}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/GABRIELA_ANTON</IRI>
+        <IRI>http://schema.org/address/3</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/GABRIELA_ANTON</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">GABRIELA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:isSupportedForeignCitizens"/>
+        <IRI>/GABRIELA_ANTON</IRI>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/GABRIELA_ANTON</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ANTON</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/GABRIELA_ANTON</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0741384595</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/GABRIELA_ANTON</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 16}, &apos;Tue&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 16}, &apos;Wed&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 15}, &apos;Thu&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;Fri&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 18}, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: &apos;CLOSE&apos;}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/IOANA_ANGELA_BELDEANU</IRI>
+        <IRI>http://schema.org/address/9</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/IOANA_ANGELA_BELDEANU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IOANA ANGELA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:isSupportedForeignCitizens"/>
+        <IRI>/IOANA_ANGELA_BELDEANU</IRI>
+        <Literal datatypeIRI="&xsd;integer">0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/IOANA_ANGELA_BELDEANU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BELDEANU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/IOANA_ANGELA_BELDEANU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0745936966</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/IOANA_ANGELA_BELDEANU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 15}, &apos;Tue&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 15}, &apos;Wed&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 16}, &apos;Thu&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 17}, &apos;Fri&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 17}, &apos;Sat&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;Sun&apos;: &apos;CLOSE&apos;}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/Ioan_Ababei</IRI>
+        <IRI>http://schema.org/address/tr8</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:authorisationNr"/>
+        <IRI>/Ioan_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1889</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/Ioan_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ioan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:languages"/>
+        <IRI>/Ioan_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">[&apos;Rusă&apos;]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/Ioan_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ababei</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/Ioan_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0236460085</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/Ioan_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 15}, &apos;Tue&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 15}, &apos;Wed&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}, &apos;Thu&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 17}, &apos;Fri&apos;: &apos;CLOSE&apos;, &apos;Sat&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}, &apos;Sun&apos;: &apos;CLOSE&apos;}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/MARIANA_OTILIA_BALAN</IRI>
+        <IRI>http://schema.org/address/7</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/MARIANA_OTILIA_BALAN</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MARIANA OTILIA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:isSupportedForeignCitizens"/>
+        <IRI>/MARIANA_OTILIA_BALAN</IRI>
+        <Literal datatypeIRI="&xsd;integer">0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/MARIANA_OTILIA_BALAN</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BALAN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/MARIANA_OTILIA_BALAN</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0743021581</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/MARIANA_OTILIA_BALAN</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 17}, &apos;Tue&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 18}, &apos;Wed&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;Thu&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 15}, &apos;Fri&apos;: &apos;CLOSE&apos;, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: &apos;CLOSE&apos;}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/Mihaela_Aanei</IRI>
+        <IRI>http://schema.org/address/tr3</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:authorisationNr"/>
+        <IRI>/Mihaela_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">8803</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/Mihaela_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mihaela</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:languages"/>
+        <IRI>/Mihaela_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">[&apos;Engleză&apos;]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/Mihaela_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aanei</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/Mihaela_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0721921461</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/Mihaela_Aanei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 15}, &apos;Tue&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 16}, &apos;Wed&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 17}, &apos;Thu&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 16}, &apos;Fri&apos;: &apos;CLOSE&apos;, &apos;Sat&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 16}, &apos;Sun&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 15}}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/Oana-Mihaela_Ababei</IRI>
+        <IRI>http://schema.org/address/tr9</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:authorisationNr"/>
+        <IRI>/Oana-Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">36656</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/Oana-Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Oana-Mihaela</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:languages"/>
+        <IRI>/Oana-Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">[&apos;Franceză&apos;]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/Oana-Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ababei</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/Oana-Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0744635892</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/Oana-Mihaela_Ababei</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;Tue&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 15}, &apos;Wed&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 15}, &apos;Thu&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 17}, &apos;Fri&apos;: &apos;CLOSE&apos;, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 18}}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/RALUCA_ANDRIESCU</IRI>
+        <IRI>http://schema.org/address/0</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/RALUCA_ANDRIESCU</IRI>
+        <IRI>http://schema.org/address/1</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/RALUCA_ANDRIESCU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RALUCA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:isSupportedForeignCitizens"/>
+        <IRI>/RALUCA_ANDRIESCU</IRI>
+        <Literal datatypeIRI="&xsd;integer">0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/RALUCA_ANDRIESCU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ANDRIESCU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/RALUCA_ANDRIESCU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0742752791</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/RALUCA_ANDRIESCU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0749962214</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/RALUCA_ANDRIESCU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 19}, &apos;Tue&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 15}, &apos;Wed&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 15}, &apos;Thu&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 15}, &apos;Fri&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 16}, &apos;Sat&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 17}, &apos;Sun&apos;: &apos;CLOSE&apos;}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/RALUCA_ANDRIESCU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}, &apos;Tue&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 19}, &apos;Wed&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 17}, &apos;Thu&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}, &apos;Fri&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 19}, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 17}}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/RAZVAN_ANTOHIE</IRI>
+        <IRI>http://schema.org/address/2</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/RAZVAN_ANTOHIE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RAZVAN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:isSupportedForeignCitizens"/>
+        <IRI>/RAZVAN_ANTOHIE</IRI>
+        <Literal datatypeIRI="&xsd;integer">0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/RAZVAN_ANTOHIE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ANTOHIE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/RAZVAN_ANTOHIE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0743195717</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/RAZVAN_ANTOHIE</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}, &apos;Tue&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 17}, &apos;Wed&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 19}, &apos;Thu&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 15}, &apos;Fri&apos;: &apos;CLOSE&apos;, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: {&apos;startH&apos;: 10, &apos;endH&apos;: 19}}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/SIMONA-STEFANIA_BALAN</IRI>
+        <IRI>http://schema.org/address/8</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/SIMONA-STEFANIA_BALAN</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SIMONA-STEFANIA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:isSupportedForeignCitizens"/>
+        <IRI>/SIMONA-STEFANIA_BALAN</IRI>
+        <Literal datatypeIRI="&xsd;integer">0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/SIMONA-STEFANIA_BALAN</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BALAN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/SIMONA-STEFANIA_BALAN</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0743662338</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/SIMONA-STEFANIA_BALAN</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 18}, &apos;Tue&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 15}, &apos;Wed&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 19}, &apos;Thu&apos;: {&apos;startH&apos;: 11, &apos;endH&apos;: 18}, &apos;Fri&apos;: &apos;CLOSE&apos;, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 15}}</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:address"/>
+        <IRI>/STELA_BADARAU</IRI>
+        <IRI>http://schema.org/address/6</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:firstName"/>
+        <IRI>/STELA_BADARAU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">STELA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:isSupportedForeignCitizens"/>
+        <IRI>/STELA_BADARAU</IRI>
+        <Literal datatypeIRI="&xsd;integer">1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:lastName"/>
+        <IRI>/STELA_BADARAU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BADARAU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:phoneNo"/>
+        <IRI>/STELA_BADARAU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0742194676</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="ns1:schedule"/>
+        <IRI>/STELA_BADARAU</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">{&apos;Mon&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 16}, &apos;Tue&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 18}, &apos;Wed&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 16}, &apos;Thu&apos;: {&apos;startH&apos;: 12, &apos;endH&apos;: 16}, &apos;Fri&apos;: {&apos;startH&apos;: 9, &apos;endH&apos;: 18}, &apos;Sat&apos;: &apos;CLOSE&apos;, &apos;Sun&apos;: {&apos;startH&apos;: 8, &apos;endH&apos;: 16}}</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

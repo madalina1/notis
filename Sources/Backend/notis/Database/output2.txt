@@ -10,7 +10,7 @@
     <ns1:address>
       <rdf:Description rdf:about="http://schema.org/address/5">
         <ns1:street>ŞTEFAN CEL MARE ŞI SFÂNT, NR. 3, PARTER</ns1:street>
-        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:coordinates>{'lat': 47.17296962, 'long': 27.56250858}</ns1:coordinates>
         <ns1:locality>IAŞI</ns1:locality>
         <ns1:city>IASI</ns1:city>
       </rdf:Description>
@@ -26,7 +26,7 @@
     <ns1:lastName>ANDRIESCU</ns1:lastName>
     <ns1:address>
       <rdf:Description rdf:about="http://schema.org/address/0">
-        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:coordinates>{'lat': 47.17477834, 'long': 27.58430958}</ns1:coordinates>
         <ns1:locality>BIVOLARI</ns1:locality>
         <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
         <ns1:city>IASI</ns1:city>
@@ -37,7 +37,7 @@
       <rdf:Description rdf:about="http://schema.org/address/1">
         <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
         <ns1:city>IASI</ns1:city>
-        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:coordinates>{'lat': 47.17839558, 'long': 27.54173756}</ns1:coordinates>
         <ns1:locality>BIVOLARI</ns1:locality>
       </rdf:Description>
     </ns1:address>
@@ -52,7 +52,7 @@
     <ns1:schedule>{'Mon': {'startH': 10, 'endH': 16}, 'Tue': {'startH': 11, 'endH': 19}, 'Wed': {'startH': 8, 'endH': 16}, 'Thu': {'startH': 10, 'endH': 19}, 'Fri': {'startH': 11, 'endH': 17}, 'Sat': {'startH': 8, 'endH': 17}, 'Sun': {'startH': 9, 'endH': 16}}</ns1:schedule>
     <ns1:address>
       <rdf:Description rdf:about="http://schema.org/address/4">
-        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:coordinates>{'lat': 47.17880397, 'long': 27.5510931}</ns1:coordinates>
         <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
         <ns1:city>IASI</ns1:city>
         <ns1:locality>TANSA</ns1:locality>
@@ -62,7 +62,7 @@
   <ns2:notaryPerson rdf:about="http://www.semanticweb.org/notis/MARIANA_OTILIA_BALAN">
     <ns1:address>
       <rdf:Description rdf:about="http://schema.org/address/7">
-        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:coordinates>{'lat': 47.18166256, 'long': 27.56525517}</ns1:coordinates>
         <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
         <ns1:city>IASI</ns1:city>
         <ns1:locality>ŢIBĂNEŞTI</ns1:locality>
@@ -84,7 +84,7 @@
       <rdf:Description rdf:about="http://schema.org/address/8">
         <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
         <ns1:city>IASI</ns1:city>
-        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:coordinates>{'lat': 47.1785706, 'long': 27.57787228}</ns1:coordinates>
         <ns1:locality>IAŞI</ns1:locality>
       </rdf:Description>
     </ns1:address>
@@ -95,7 +95,7 @@
     <ns1:schedule>{'Mon': {'startH': 12, 'endH': 16}, 'Tue': {'startH': 8, 'endH': 16}, 'Wed': {'startH': 10, 'endH': 15}, 'Thu': {'startH': 10, 'endH': 19}, 'Fri': {'startH': 8, 'endH': 18}, 'Sat': 'CLOSE', 'Sun': 'CLOSE'}</ns1:schedule>
     <ns1:address>
       <rdf:Description rdf:about="http://schema.org/address/3">
-        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:coordinates>{'lat': 47.17524509, 'long': 27.56748676}</ns1:coordinates>
         <ns1:locality>HOLBOCA</ns1:locality>
         <ns1:street>SAT DANCU, NR. 11 A</ns1:street>
         <ns1:city>IASI</ns1:city>
@@ -111,7 +111,7 @@
         <ns1:city>IASI</ns1:city>
         <ns1:locality>IASI</ns1:locality>
         <ns1:street>STR. NICOLINA NR. 11, BL. A5, SC. B PARTER</ns1:street>
-        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:coordinates>{'lat': 47.17880397, 'long': 27.4982214}</ns1:coordinates>
       </rdf:Description>
     </ns1:address>
     <ns1:lastName>BELDEANU</ns1:lastName>
@@ -123,7 +123,7 @@
     <ns1:address>
       <rdf:Description rdf:about="http://schema.org/address/2">
         <ns1:locality>CIOHORANI</ns1:locality>
-        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:coordinates>{'lat': 47.17792886, 'long': 27.48165607}</ns1:coordinates>
         <ns1:street rdf:datatype="http://www.w3.org/2001/XMLSchema#double">nan</ns1:street>
         <ns1:city>IASI</ns1:city>
       </rdf:Description>
@@ -142,7 +142,7 @@
     <ns1:address>
       <rdf:Description rdf:about="http://schema.org/address/6">
         <ns1:locality> IASI</ns1:locality>
-        <ns1:coordinates>{'lat': 47.12995076, 'long': 27.65790939}</ns1:coordinates>
+        <ns1:coordinates>{'lat': 47.14127796, 'long': 27.53753185}</ns1:coordinates>
         <ns1:city>IASI</ns1:city>
         <ns1:street>STR. A PANU, BL. H1, PARTER</ns1:street>
       </rdf:Description>

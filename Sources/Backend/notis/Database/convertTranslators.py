@@ -8,6 +8,22 @@ from rdflib.namespace import RDF, FOAF
 def read_translators():
     list_of_translators = []
     dfs = pd.read_excel("traducatori.xlsx")
+
+    coordinatesList = [
+    {"lat":47.17396962, "long":27.56250858},
+    {"lat":47.17577834, "long":27.58430958},
+    {"lat":47.17239558, "long":27.54173756},
+    {"lat":47.17680397, "long":27.5510931},
+    {"lat":47.18366256, "long":27.56525517},
+    {"lat":47.1765706, "long":27.57787228},
+    {"lat":47.17324509, "long":27.56748676},
+    {"lat":47.17980397, "long":27.4982214},
+    {"lat":47.17292886, "long":27.48165607},
+    {"lat":47.14527796, "long":27.53753185},
+    {"lat":47.12386303, "long":27.55710125},
+    {"lat":47.15570399, "long":27.68949509},
+    ]
+
     for index, row in dfs.iterrows():
         lastNameFirstName = row["Nume si prenume"].split(" ");
         lastName = lastNameFirstName[0]
@@ -55,6 +71,11 @@ def read_translators():
             }])
         }
 
+        if(index < 12):
+            coordinates = coordinatesList.pop()
+        else:
+            coordinates = {"lat":47.12995076, "long":27.65790939}
+
         translator = {
             "lastName": lastName,
             "firstName": firstName,
@@ -63,7 +84,8 @@ def read_translators():
             "court_of_appeal": court_of_Appeal,
             "languages": languages,
             "authorisation_no":str(authorisationNo),
-            "schedule": schedule
+            "schedule": schedule,
+            "coordinates":coordinates
         }
         list_of_translators.append(translator)
     return list_of_translators
@@ -107,6 +129,7 @@ def createRDF(list_of_translators):
         gg.add((address, FOAF.city, Literal(translator["city"])))
         gg.add((address, FOAF.courtOfAppeal, Literal(translator["court_of_appeal"])))
         gg.add((person, FOAF.address, address))
+        gg.add((address, FOAF.coordinates, Literal(translator["coordinates"])))
         gg.add((person, FOAF.languages, Literal(translator["languages"])))
 
     file2 = open("output-trans.txt", "wb")

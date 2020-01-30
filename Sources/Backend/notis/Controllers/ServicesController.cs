@@ -23,9 +23,9 @@ namespace notis.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get(string officeType)
         {
-            var result = servicesService.GetAllServices();
+            var result = servicesService.GetAllServices(officeType);
 
             return Ok(result);
         }

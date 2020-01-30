@@ -16,14 +16,14 @@ namespace notis.Business.Services
             rdfRepository = new RDFRepository();
         }
 
-        public List<Service> GetServiceForOffice(string name)
+        public List<Service> GetServiceForOffice(string officeType, string name)
         {
             var serviceList = new List<Service>();
 
             var notary = new Notary();
             notary.Address = new Address();
 
-            var allServices = GetAllServices();
+            var allServices = GetAllServices(officeType);
 
             var services = (SparqlResultSet)rdfRepository.ProcessQuery("SELECT ?o WHERE { notis2:" + name + " notis2:hasServices ?o} ");
             SparqlResultSet rset = (SparqlResultSet)services;
@@ -38,18 +38,18 @@ namespace notis.Business.Services
             return serviceList;
         }
 
-        public Service GetServiceByName(string name)
+        public Service GetServiceByName(string officeType, string name)
         {
-            var service = GetAllServices().Find(x => x.ServiceName == name);
+            var service = GetAllServices(officeType).Find(x => x.ServiceName == name);
 
             return service;
         }
 
-        public List<Service> GetAllServices()
+        public List<Service> GetAllServices(string officeType)
         {
             var serviceList = new List<Service>();
 
-            var services = (SparqlResultSet)rdfRepository.ProcessQuery("SELECT ?s WHERE { ?s rdf:type notis2:notary-type-of-service}");
+            var services = (SparqlResultSet)rdfRepository.ProcessQuery("SELECT ?s WHERE { ?s rdf:type notis2:"+ officeType + "-type-of-service}");
             SparqlResultSet rset = (SparqlResultSet)services;
             foreach (SparqlResult result in rset)
             {

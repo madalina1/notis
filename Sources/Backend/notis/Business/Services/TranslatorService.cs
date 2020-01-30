@@ -14,10 +14,13 @@ namespace notis.Business.Services
 
         private SharedService sharedService;
 
+        private ServicesService servicesService;
+
         public TranslatorService()
         {
             rdfRepository = new RDFRepository();
             sharedService = new SharedService();
+            servicesService = new ServicesService();
         }
 
         public IEnumerable<Translator> GetAllTranslatorOffices()
@@ -57,8 +60,8 @@ namespace notis.Business.Services
 
         public Translator GetTranslator(string name)
         {
-            var notary = new Translator();
-            notary.Address = new Address();
+            var translator = new Translator();
+            translator.Address = new Address();
 
             var individ = (SparqlResultSet)rdfRepository.ProcessQuery("SELECT ?p ?o WHERE { notis2:" + name + " ?p ?o} order by ?p");
 
@@ -75,32 +78,32 @@ namespace notis.Business.Services
                 {
                     case "firstName":
                         {
-                            notary.PersonName = oValue;
+                            translator.PersonName = oValue;
                             break;
                         }
                     case "lastName":
                         {
-                            notary.PersonName = notary.PersonName + " " + oValue;
+                            translator.PersonName = translator.PersonName + " " + oValue;
                             break;
                         }
                     case "phoneNo":
                         {
-                            notary.PhoneNumber = oValue;
+                            translator.PhoneNumber = oValue;
                             break;
                         }
                     case "authorisationNr":
                         {
-                            notary.AuthorizedNumber = oValue;
+                            translator.AuthorizedNumber = oValue;
                             break;
                         }
                     case "schedule":
                         {
-                            notary.Schedule = sharedService.GetScheduleByString(oValue);
+                            translator.Schedule = sharedService.GetScheduleByString(oValue);
                             break;
                         }
                     case "languages":
                         {
-                            notary.Languages = oValue
+                            translator.Languages = oValue
                                 .Replace("\'", "")
                                 .Replace("[", "")
                                 .Replace("]", "")
@@ -127,13 +130,19 @@ namespace notis.Business.Services
                                 {
                                     case "city":
                                         {
-                                            notary.Address.City = oValue2;
+                                            translator.Address.City = oValue2;
                                             break;
                                         }
                                     case "courtOfAppeal":
                                         {
-                                            notary.Address.CourtOfAppeal = oValue2;
+                                            translator.Address.CourtOfAppeal = oValue2;
                                             break;
+                                        }
+                                    case "coordinates":
+                                    {
+                                        translator.Address.Lat = sharedService.GetLatOrLong("lat", oValue2);
+                                        translator.Address.Long = sharedService.GetLatOrLong("long", oValue2);
+                                        break;
                                         }
                                 }
                             }
@@ -143,9 +152,212 @@ namespace notis.Business.Services
                 }
             }
 
-//            notary.Services = servicesService.GetServiceForOffice(name);
+            translator.Services = servicesService.GetServiceForOffice("translation", name);
 
-            return notary;
+            return translator;
+        }
+
+        public object GetTranslatorsOfficesByFilters(
+            string city, 
+            string typeOfService, 
+            double? minPrice, 
+            double? maxPrice,
+            int? startH, 
+            int? endH, 
+            string days)
+        {
+            city = "IASI";
+            typeOfService = typeOfService ?? "Medical_documents";
+            minPrice = minPrice ?? 10;
+            maxPrice = maxPrice ?? 610;
+            days = days ?? "Mon,Tue,Wed,Thu,Fri,Sat,Sun";
+            startH = startH ?? 7;
+            endH = endH ?? 18;
+
+            var translatorsList = new List<Translator>();
+
+            var query = "";
+
+            if (!string.IsNullOrEmpty(typeOfService))
+            {
+                query = "SELECT  distinct *" +
+                        "WHERE { " +
+                        "?person rdf:type notis2:translator." +
+                        "?person ns1:firstName ?firstName." +
+                        "?person ns1:lastName ?lastName." +
+                        "?person ns1:address ?address ." +
+                        "?address ns1:city ?city ." +
+                        "?person notis2:hasServices notis2:" + typeOfService.Replace(" ", "_") + " ." +
+                        "FILTER(?city = \"" + city + "\")" + "}";
+            }
+            else
+            {
+                query = "SELECT  distinct *" +
+                        "WHERE { " +
+                        "?person rdf:type notis2:translator." +
+                        "?person ns1:firstName ?firstName." +
+                        "?person ns1:lastName ?lastName." +
+                        "?person ns1:address ?address ." +
+                        "?address ns1:city ?city ." +
+                        "FILTER(?city = \"" + city + "\")" + "}";
+            }
+           
+
+            var individ = (SparqlResultSet)rdfRepository.ProcessQuery(query);
+
+            SparqlResultSet rset = individ;
+            foreach (SparqlResult result in rset)
+            {
+                var notary = new Translator();
+                var name = result.Value("firstName").ToString() + " " + result.Value("lastName").ToString();
+                notary = GetTranslator(name.Replace(" ", "_"));
+
+                var hasAtLeast1ServiceGoodPrice = false;
+                foreach (var service in notary.Services)
+                {
+                    if (service != null)
+                    {
+                        if (minPrice < service.MaxPrice && minPrice.HasValue)
+                        {
+                            hasAtLeast1ServiceGoodPrice = true;
+                        }
+                        if (maxPrice > service.MaxPrice && maxPrice.HasValue)
+                        {
+                            hasAtLeast1ServiceGoodPrice = true;
+                        }
+                    }
+                }
+
+                var hasGoodSchedule = false;
+                var schedule = notary.Schedule;
+                var daysList = days ?? "Mon,Tue,Wed,Thu,Fri,Sat,Sun";
+                foreach (var day in daysList.Split(',').ToList())
+                {
+                    switch (day)
+                    {
+                        case "Mon":
+                            {
+                                var startHour = schedule.Mon.StartH;
+                                var endHour = schedule.Mon.EndH;
+
+                                if (startH != null && startH < endHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+                                if (endH != null && endH > startHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+
+                                break;
+                            }
+                        case "Tue":
+                            {
+                                var startHour = schedule.Tue.StartH;
+                                var endHour = schedule.Tue.EndH;
+
+                                if (startH != null && startH < endHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+                                if (endH != null && endH > startHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+
+                                break;
+                            }
+                        case "Wed":
+                            {
+                                var startHour = schedule.Wed.StartH;
+                                var endHour = schedule.Wed.EndH;
+
+                                if (startH != null && startH < endHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+                                if (endH != null && endH > startHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+
+                                break;
+                            }
+                        case "Thu":
+                            {
+                                var startHour = schedule.Thu.StartH;
+                                var endHour = schedule.Thu.EndH;
+
+                                if (startH != null && startH < endHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+                                if (endH != null && endH > startHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+
+                                break;
+                            }
+                        case "Fri":
+                            {
+                                var startHour = schedule.Fri.StartH;
+                                var endHour = schedule.Fri.EndH;
+
+                                if (startH != null && startH < endHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+                                if (endH != null && endH > startHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+
+                                break;
+                            }
+                        case "Sat":
+                            {
+                                var startHour = schedule.Sat.StartH;
+                                var endHour = schedule.Sat.EndH;
+
+                                if (startH != null && startH < endHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+                                if (endH != null && endH > startHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+
+                                break;
+                            }
+                        case "Sun":
+                            {
+                                var startHour = schedule.Sun.StartH;
+                                var endHour = schedule.Sun.EndH;
+
+                                if (startH != null && startH < endHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+                                if (endH != null && endH > startHour)
+                                {
+                                    hasGoodSchedule = true;
+                                }
+
+                                break;
+                            }
+                    }
+                }
+
+
+                if (hasAtLeast1ServiceGoodPrice && hasGoodSchedule)
+                {
+                    translatorsList.Add(notary);
+                }
+            }
+
+            return translatorsList;
         }
     }
 }
